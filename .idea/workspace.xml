@@ -1,7 +1,792 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="" />
+    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/assets/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/100.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/101.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/102.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/103.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/104.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/105.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/106.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/107.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/108.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/109.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/110.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/111.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/112.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/113.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/114.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/115.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/116.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/117.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/118.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/119.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/120.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/121.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/122.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/123.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/124.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/125.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/126.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/127.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/128.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/129.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/130.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/131.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/132.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/133.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/134.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/135.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/136.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/137.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/138.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/139.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/140.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/141.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/142.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/143.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/144.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/145.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/146.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/147.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/148.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/149.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/150.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/151.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/152.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/153.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/154.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/155.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/156.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/157.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/158.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/159.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/16.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/160.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/161.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/162.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/163.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/164.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/165.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/166.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/167.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/168.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/169.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/17.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/170.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/171.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/172.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/173.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/174.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/175.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/176.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/177.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/178.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/179.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/18.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/180.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/181.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/182.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/183.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/184.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/185.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/186.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/187.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/188.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/189.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/19.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/190.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/191.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/192.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/193.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/194.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/195.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/196.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/197.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/198.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/199.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/20.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/200.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-b.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-c.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-d.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-e.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-exclamation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-f.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-g.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-h.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-i.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-j.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-k.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-l.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-m.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-n.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-o.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-p.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-q.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-question.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-r.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-s.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-t.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-u.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-v.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-w.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-y.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201-z.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/201.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/202.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/203.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/204.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/205.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/206.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/207.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/208.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/209.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/21.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/210.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/211.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/212.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/213.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/214.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/215.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/216.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/217.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/218.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/219.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/220.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/221.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/222.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/223.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/224.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/225.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/226.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/227.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/228.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/229.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/230.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/231.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/232.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/233.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/234.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/235.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/236.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/237.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/238.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/239.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/240.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/241.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/242.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/243.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/244.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/245.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/246.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/247.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/248.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/249.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/25.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/250.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/251.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/252.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/253.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/254.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/255.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/256.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/257.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/258.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/259.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/26.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/260.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/261.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/262.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/263.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/264.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/265.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/266.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/267.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/268.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/269.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/27.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/270.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/271.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/272.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/273.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/274.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/275.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/276.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/277.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/278.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/279.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/28.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/280.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/281.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/282.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/283.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/284.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/285.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/286.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/287.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/288.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/289.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/29.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/290.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/291.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/292.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/293.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/294.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/295.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/296.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/297.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/298.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/299.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/30.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/300.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/301.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/302.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/303.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/304.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/305.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/306.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/307.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/308.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/309.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/31.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/310.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/311.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/312.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/313.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/314.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/315.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/316.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/317.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/318.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/319.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/32.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/320.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/321.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/322.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/323.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/324.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/325.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/326.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/327.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/328.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/329.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/33.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/330.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/331.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/332.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/333.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/334.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/335.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/336.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/337.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/338.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/339.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/34.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/340.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/341.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/342.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/343.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/344.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/345.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/346.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/347.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/348.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/349.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/35.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/350.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/351-rainy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/351-snowy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/351-sunny.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/351.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/352.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/353.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/354.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/355.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/356.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/357.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/358.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/359.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/36.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/360.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/361.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/362.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/363.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/364.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/365.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/366.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/367.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/368.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/369.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/37.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/370.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/371.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/372.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/373.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/374.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/375.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/376.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/377.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/378.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/379.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/38.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/380.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/381.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/382.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/383.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/384.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/385.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/386-attack.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/386-defense.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/386-normal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/386-speed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/386.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/387.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/388.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/389.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/39.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/390.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/391.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/392.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/393.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/394.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/395.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/396.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/397.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/398.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/399.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/40.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/401.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/402.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/403.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/405.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/406.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/407.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/408.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/409.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/41.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/410.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/411.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/412-plant.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/412-sandy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/412-trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/412.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/413-plant.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/413-sandy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/413-trash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/413.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/414.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/415.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/416.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/417.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/418.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/419.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/42.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/420.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/421-overcast.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/421-sunshine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/421.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/422-east.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/422-west.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/422.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/423-east.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/423-west.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/423.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/424.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/425.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/426.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/427.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/428.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/429.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/43.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/430.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/431.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/432.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/433.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/434.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/435.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/436.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/437.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/438.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/439.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/44.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/440.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/441.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/442.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/443.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/444.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/445.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/446.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/447.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/448.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/449.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/45.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/450.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/451.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/452.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/453.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/454.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/455.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/456.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/457.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/458.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/459.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/46.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/460.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/461.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/462.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/463.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/464.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/465.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/466.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/467.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/468.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/469.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/47.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/470.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/471.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/472.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/473.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/474.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/475.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/476.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/477.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/478.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/479-fan.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/479-frost.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/479-heat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/479-mow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/479-wash.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/479.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/48.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/480.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/481.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/482.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/483.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/484.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/485.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/486.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/487-altered.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/487-origin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/487.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/488.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/489.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/49.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/490.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/491.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/492-land.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/492-sky.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/492.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-bug.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-dragon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-electric.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-fighting.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-fire.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-flying.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-ghost.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-grass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-ground.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-ice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-normal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-poison.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-psychic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-rock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-steel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493-water.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/493.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/494.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/495.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/496.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/497.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/498.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/499.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/50.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/500.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/501.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/502.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/503.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/504.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/505.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/506.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/507.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/508.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/509.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/51.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/510.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/511.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/512.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/513.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/514.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/515.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/516.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/517.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/518.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/519.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/52.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/520.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/521.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/522.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/523.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/524.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/525.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/526.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/527.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/528.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/529.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/53.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/530.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/531.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/532.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/533.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/534.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/535.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/536.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/537.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/538.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/539.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/54.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/540.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/541.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/542.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/543.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/544.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/545.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/546.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/547.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/548.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/549.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/55.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/550-blue-striped.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/550-red-striped.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/550.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/551.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/552.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/553.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/554.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/555-standard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/555.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/556.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/557.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/558.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/559.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/56.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/560.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/561.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/562.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/563.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/564.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/565.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/566.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/567.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/568.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/569.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/57.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/570.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/571.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/572.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/573.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/574.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/575.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/576.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/577.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/578.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/579.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/58.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/580.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/581.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/582.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/583.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/584.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/585-autumn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/585-spring.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/585-summer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/585-winter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/585.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/586-autumn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/586-spring.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/586-summer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/586-winter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/586.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/587.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/588.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/589.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/59.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/590.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/591.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/592.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/593.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/594.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/595.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/596.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/597.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/598.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/599.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/60.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/600.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/601.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/602.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/603.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/604.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/605.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/606.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/607.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/608.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/609.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/61.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/610.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/611.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/612.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/613.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/614.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/615.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/616.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/617.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/618.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/619.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/62.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/620.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/621.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/622.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/623.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/624.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/625.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/626.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/627.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/628.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/629.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/63.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/630.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/631.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/632.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/633.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/634.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/635.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/636.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/637.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/638.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/639.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/64.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/640.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/641-incarnate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/641-therian.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/641.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/642-incarnate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/642-therian.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/642.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/643.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/644.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/645-incarnate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/645-therian.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/645.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/646-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/646-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/646.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/647-ordinary.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/647-resolute.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/647.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/648-aria.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/648-pirouette.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/648.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/649-burn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/649-chill.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/649-douse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/649-shock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/649.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/65.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/66.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/67.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/68.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/69.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/70.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/71.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/72.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/73.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/74.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/75.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/76.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/77.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/78.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/79.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/80.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/81.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/82.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/83.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/84.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/85.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/86.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/87.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/88.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/89.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/90.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/91.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/92.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/93.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/94.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/95.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/96.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/97.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/98.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/99.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bloc/PokemonsBloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/Pokemon.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/Repository.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens.pokemons/PokemonsPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +805,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/bloc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
@@ -28,6 +823,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="" />
@@ -36,6 +832,92 @@
       <option name="presentableId" value="Default" />
       <updated>1621176124050</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1621176193565</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621176193565</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621177283552">
+      <screen x="0" y="27" width="3600" height="1053" />
+    </state>
+    <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177283552" />
+    <state x="3135" y="229" width="202" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1621201494823">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2604" y="257" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177353532" />
+    <state x="3135" y="229" width="202" height="575" key="#com.intellij.ide.util.MemberChooser/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621201494823" />
+    <state x="2571" y="286" width="440" height="512" key="AndroidProcessChooserDialog" timestamp="1621203133186">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2571" y="286" width="440" height="512" key="AndroidProcessChooserDialog/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621203133186" />
+    <state width="1562" height="469" key="GridCell.Tab.0.bottom" timestamp="1621204867954">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="359" key="GridCell.Tab.0.bottom/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
+    <state width="1562" height="469" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621204867954" />
+    <state width="1562" height="469" key="GridCell.Tab.0.center" timestamp="1621204867954">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="359" key="GridCell.Tab.0.center/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
+    <state width="1562" height="469" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621204867954" />
+    <state width="1562" height="469" key="GridCell.Tab.0.left" timestamp="1621204867954">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="359" key="GridCell.Tab.0.left/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608276" />
+    <state width="1562" height="469" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621204867954" />
+    <state width="1562" height="469" key="GridCell.Tab.0.right" timestamp="1621204867954">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="359" key="GridCell.Tab.0.right/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
+    <state width="1562" height="469" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621204867954" />
+    <state x="2391" y="260" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1621176195370">
+      <screen x="0" y="27" width="3600" height="1053" />
+    </state>
+    <state x="2391" y="260" width="800" height="563" key="Vcs.Push.Dialog.v2/0.27.3600.1053@0.27.3600.1053" timestamp="1621176195370" />
+    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1621203986316">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621203986316" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/model/Pokemon.dart</url>
+          <line>17</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint suspend="THREAD" type="dart-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="FlutterRunConfigurationType">
+        <watch expression="pokemonUrl.pathSegments.last" language="Dart" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

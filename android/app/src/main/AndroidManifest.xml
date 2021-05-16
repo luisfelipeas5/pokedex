@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.luisfelipeas5.pokedex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
    <application
         android:label="pokedex"
         android:icon="@mipmap/ic_launcher">
