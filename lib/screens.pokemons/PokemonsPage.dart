@@ -30,7 +30,7 @@ class _PokemonsPage extends State<PokemonsPage> {
 
 class PokemonList extends StatelessWidget {
 
-  final List<Pokemon> pokemons;
+  final List<Pokemon>? pokemons;
 
   PokemonList(this.pokemons): super();
 
@@ -38,22 +38,29 @@ class PokemonList extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloc = Provider.of<PokemonsBloc>(context, listen: false);
     return Scaffold(
-      body: Column(
-        children: [
-          Text("Pokedex"),
-          Expanded(
-            child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Pokedex", style: TextStyle(fontSize: 24),),
+              Expanded(
+                child: GridView.builder(
+                  padding: EdgeInsets.only(top: 24),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2
+                  ),
+                  itemBuilder: (_, index) {
+                    bloc.onIndexBuilt(index);
+                    return PokemonListItem(pokemons![index]);
+                  },
+                  itemCount: pokemons!.length,
+                ),
               ),
-              itemBuilder: (_, index) {
-                bloc.onIndexBuilt(index);
-                return PokemonListItem(pokemons[index]);
-              },
-              itemCount: pokemons.length,
-            ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }
@@ -61,17 +68,20 @@ class PokemonList extends StatelessWidget {
 
 class PokemonListItem extends StatelessWidget {
 
-  PokemonListItem(this.pokemon, {Key key}): super(key: key);
+  PokemonListItem(this.pokemon, {Key? key}): super(key: key);
 
   final Pokemon pokemon;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(pokemon.name),
-        SvgPicture.asset(pokemon.image, width: 80, height: 80),
-      ],
+    return Container(
+      color: pokemon.getColor(),
+      child: Column(
+        children: [
+          Text(pokemon.name!),
+          SvgPicture.network(pokemon.image!, width: 80, height: 80),
+        ],
+      ),
     );
   }
 }

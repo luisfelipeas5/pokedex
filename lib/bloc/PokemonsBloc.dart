@@ -4,7 +4,7 @@ import 'package:pokedex/model/Repository.dart';
 
 class PokemonsBloc {
 
-  Repository repository;
+  late Repository repository;
   final _pokemons = <Pokemon>[];
 
   final _pokemonsStreamController = StreamController<List<Pokemon>>();

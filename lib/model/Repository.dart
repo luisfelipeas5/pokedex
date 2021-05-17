@@ -10,13 +10,37 @@ class Repository {
       "limit": "20",
       "offset": offset.toString()
     };
-    var uri = Uri.https("pokeapi.co", "api/v2/pokemon", queryParameters);
+    final uri = Uri.https("pokeapi.co", "api/v2/pokemon", queryParameters);
     final response = await get(uri);
     Iterable jsonArrayString = jsonDecode(response.body)["results"];
 
-    return List<Pokemon>.from(
-        jsonArrayString.map((e) => Pokemon.fromJson(e))
+    var futures = List<Future<Pokemon>>.from(
+        jsonArrayString.map((jsonElement) async {
+          var pokemonFromList = Pokemon.fromJson(jsonElement);
+          await _inflatePokemonDetail(pokemonFromList);
+          return pokemonFromList;
+        })
     );
+    return Future.wait(futures);
+  }
+  
+  Future<Pokemon> _inflatePokemonDetail(Pokemon pokemon) async {
+    final number = pokemon.number;
+    final uri = Uri.https("pokeapi.co", "api/v2/pokemon/$number");
+    final response = await get(uri);
+    final responseJsonDecoded = jsonDecode(response.body);
+
+    pokemon.image = responseJsonDecoded["sprites"]["other"]["dream_world"]["front_default"];
+    final Iterable typesJson = responseJsonDecoded['types'];
+    pokemon.types = List<String>.from(typesJson.map((e) => e["type"]["name"]));
+
+    final colorUri = Uri.https("pokeapi.co", "api/v2/pokemon-color/$number");
+    var responseColor = await get(colorUri);
+    if (responseColor.statusCode == 200) {
+      final color = jsonDecode(responseColor.body)["name"];
+      pokemon.color = color;
+    }
+    return pokemon;
   }
 
 }

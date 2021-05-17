@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           ProxyProvider<Repository, PokemonsBloc>(
             create: (_) => PokemonsBloc(),
             update: (context, repository, pokemonsBloc) {
-              pokemonsBloc.repository = repository;
+              pokemonsBloc!.repository = repository;
               return pokemonsBloc;
             },
             dispose: (_, __) {
