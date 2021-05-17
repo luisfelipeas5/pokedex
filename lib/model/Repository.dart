@@ -5,12 +5,12 @@ import 'package:http/http.dart' show get;
 
 class Repository {
 
-  final _pokemons = [
-    Pokemon(1, "Bulba"), Pokemon(2, "Ivy"), Pokemon(3, "Venu"), Pokemon(4, "Charmander")
-  ];
-
-  Future<List<Pokemon>> getPokemons() async {
-    var uri = Uri.https("pokeapi.co", "api/v2/pokemon", { "limit": "100" });
+  Future<List<Pokemon>> getPokemons(int offset) async {
+    var queryParameters = {
+      "limit": "20",
+      "offset": offset.toString()
+    };
+    var uri = Uri.https("pokeapi.co", "api/v2/pokemon", queryParameters);
     final response = await get(uri);
     Iterable jsonArrayString = jsonDecode(response.body)["results"];
 

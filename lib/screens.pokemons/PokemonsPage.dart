@@ -14,7 +14,7 @@ class _PokemonsPage extends State<PokemonsPage> {
   @override
   Widget build(BuildContext context) {
     final bloc = Provider.of<PokemonsBloc>(context, listen: false);
-    bloc.loadPokemons();
+    bloc.loadMorePokemons();
 
     return StreamBuilder<List<Pokemon>>(
       stream: bloc.pokemonsStreamController,
@@ -36,6 +36,7 @@ class PokemonList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bloc = Provider.of<PokemonsBloc>(context, listen: false);
     return Scaffold(
       body: Column(
         children: [
@@ -45,7 +46,10 @@ class PokemonList extends StatelessWidget {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2
               ),
-              itemBuilder: (_, index) => PokemonListItem(pokemons[index]),
+              itemBuilder: (_, index) {
+                bloc.onIndexBuilt(index);
+                return PokemonListItem(pokemons[index]);
+              },
               itemCount: pokemons.length,
             ),
           ),

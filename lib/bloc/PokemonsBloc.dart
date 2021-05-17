@@ -5,18 +5,27 @@ import 'package:pokedex/model/Repository.dart';
 class PokemonsBloc {
 
   Repository repository;
+  final _pokemons = <Pokemon>[];
 
   final _pokemonsStreamController = StreamController<List<Pokemon>>();
 
   Stream<List<Pokemon>> get pokemonsStreamController => _pokemonsStreamController.stream;
 
-  loadPokemons() async {
-    final pokemons = await repository.getPokemons();
-    _pokemonsStreamController.sink.add(pokemons);
+  loadMorePokemons() async {
+    final newPokemons = await repository.getPokemons(_pokemons.length);
+    _pokemons.addAll(newPokemons);
+    _pokemonsStreamController.sink.add(_pokemons);
   }
 
   dispose() {
     _pokemonsStreamController.close();
+  }
+
+  onIndexBuilt(int index) {
+    var threshold = 2;
+    if (_pokemons.isNotEmpty && index >= _pokemons.length - threshold) {
+      loadMorePokemons();
+    }
   }
 
 }
