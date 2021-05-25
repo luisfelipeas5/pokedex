@@ -34,12 +34,6 @@ class Repository {
     final Iterable typesJson = responseJsonDecoded['types'];
     pokemon.types = List<String>.from(typesJson.map((e) => e["type"]["name"]));
 
-    final colorUri = Uri.https("pokeapi.co", "api/v2/pokemon-color/$number");
-    var responseColor = await get(colorUri);
-    if (responseColor.statusCode == 200) {
-      final color = jsonDecode(responseColor.body)["name"];
-      pokemon.color = color;
-    }
     return pokemon;
   }
 

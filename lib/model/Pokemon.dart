@@ -6,24 +6,41 @@ class Pokemon {
   Pokemon(this.number, this.name, {this.image, this.types});
 
   final int number;
-  final String? name;
+  final String name;
   List<String>? types;
   String? image;
 
-  String? _color;
-  set color(String? color) => _color = color;
   Color getColor() {
-    switch(_color) {
-      case 'black': return Colors.black;
-      case 'red': return Colors.red;
-      case 'yellow': return Colors.yellow;
-      case 'blue': return Colors.blue;
-      case 'green': return Colors.green;
-      case 'grey': return Colors.grey;
-      case 'brown': return Colors.brown;
-      case 'purple': return Colors.purple;
-      case 'orange': return Colors.orange;
-      default: return Colors.transparent;
+    switch(types?.first) {
+      case 'grass':
+      case 'bug':
+        return Colors.green;
+      case 'fire':
+        return Colors.red;
+      case 'electric':
+        return Colors.yellow;
+      case 'water':
+      case 'ice':
+        return Colors.blue;
+      case 'fighting':
+      case 'normal':
+      case 'steel':
+      case 'flying':
+        return Colors.grey;
+      case 'rock':
+      case 'ground':
+        return Colors.brown;
+      case 'shadow':
+      case 'dark':
+        return Colors.black54;
+      case 'poison':
+        return Colors.purple;
+      case 'psychic':
+        return Colors.orange;
+      case 'fairy':
+        return Colors.pink;
+      default:
+        return Colors.transparent;
     }
   }
 
@@ -33,14 +50,6 @@ class Pokemon {
     final number = int.parse(pathSegments[pathSegments.length - 2]);
     final name = json['name'];
     return Pokemon(number, name);
-  }
-
-  factory Pokemon.fromDetailJson(Map<String, dynamic> json) {
-    var pokemon = Pokemon.fromJson(json);
-
-
-
-    return pokemon;
   }
 
 }

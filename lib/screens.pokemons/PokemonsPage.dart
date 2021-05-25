@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:pokedex/model/Pokemon.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pokedex/bloc/PokemonsBloc.dart';
@@ -10,29 +11,25 @@ class PokemonsPage extends StatefulWidget {
 }
 
 class _PokemonsPage extends State<PokemonsPage> {
-
   @override
   Widget build(BuildContext context) {
     final bloc = Provider.of<PokemonsBloc>(context, listen: false);
     bloc.loadMorePokemons();
 
     return StreamBuilder<List<Pokemon>>(
-      stream: bloc.pokemonsStreamController,
-      initialData: [],
-      builder: (context, snapshot) {
-        var pokemons = snapshot.data;
-        return PokemonList(pokemons);
-      }
-    );
+        stream: bloc.pokemonsStreamController,
+        initialData: [],
+        builder: (context, snapshot) {
+          var pokemons = snapshot.data;
+          return PokemonList(pokemons);
+        });
   }
-
 }
 
 class PokemonList extends StatelessWidget {
-
   final List<Pokemon>? pokemons;
 
-  PokemonList(this.pokemons): super();
+  PokemonList(this.pokemons) : super();
 
   @override
   Widget build(BuildContext context) {
@@ -40,17 +37,21 @@ class PokemonList extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.only(top: 16, right: 16, left: 16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Pokedex", style: TextStyle(fontSize: 24),),
+              Text(
+                "Pokedex",
+                style: TextStyle(fontSize: 24),
+              ),
               Expanded(
                 child: GridView.builder(
                   padding: EdgeInsets.only(top: 24),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2
-                  ),
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 10,
+                      crossAxisSpacing: 10),
                   itemBuilder: (_, index) {
                     bloc.onIndexBuilt(index);
                     return PokemonListItem(pokemons![index]);
@@ -67,21 +68,45 @@ class PokemonList extends StatelessWidget {
 }
 
 class PokemonListItem extends StatelessWidget {
-
-  PokemonListItem(this.pokemon, {Key? key}): super(key: key);
+  PokemonListItem(this.pokemon, {Key? key}) : super(key: key);
 
   final Pokemon pokemon;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: pokemon.getColor(),
+      height: 10,
+      decoration: BoxDecoration(
+        color: pokemon.getColor(),
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+      ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(pokemon.name!),
-          SvgPicture.network(pokemon.image!, width: 80, height: 80),
+          Container(
+            child: Text(pokemon.name),
+          ),
+          Row(
+            children: [
+              Expanded(child: PokemonListType(pokemon.types??[])),
+              Expanded(
+                  child: SvgPicture.network(pokemon.image ?? "", width: 80)
+              ),
+            ],
+          ),
         ],
       ),
     );
+  }
+}
+
+class PokemonListType extends StatelessWidget {
+  PokemonListType(this.types, {Key? key}): super(key: key);
+
+  final List<String> types;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(types.first);
   }
 }

@@ -22,18 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Pagination added">
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="- null safety migration&#10;- safeArea added&#10;- text size and some margin added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bloc/PokemonsBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bloc/PokemonsBloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/model/Pokemon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Pokemon.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/model/Repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Repository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens.pokemons/PokemonsPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens.pokemons/PokemonsPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621219225539</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- null safety migration&#10;- safeArea added&#10;- text size and some margin added">
+      <created>1621283479348</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621283479348</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,51 +121,68 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="- Created a ListView with .builder&#10;- Image assets added and loaded with SvgImage&#10;- Provider + Bloc added&#10;- Calling PokeAPI to list first Pokemons" />
     <MESSAGE value="Pagination added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pagination added" />
+    <MESSAGE value="- null safety migration&#10;- safeArea added&#10;- text size and some margin added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- null safety migration&#10;- safeArea added&#10;- text size and some margin added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621177283552">
       <screen x="0" y="27" width="3600" height="1053" />
     </state>
     <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177283552" />
-    <state x="3135" y="229" width="202" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1621201494823">
+    <state x="3135" y="229" width="202" height="582" key="#com.intellij.ide.util.MemberChooser" timestamp="1621905395252">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2604" y="257" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177353532" />
-    <state x="3135" y="229" width="202" height="575" key="#com.intellij.ide.util.MemberChooser/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621201494823" />
-    <state x="2571" y="286" width="440" height="519" key="AndroidProcessChooserDialog" timestamp="1621282912731">
+    <state x="3135" y="229" width="202" height="582" key="#com.intellij.ide.util.MemberChooser/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621905395252" />
+    <state x="2571" y="286" width="440" height="519" key="AndroidProcessChooserDialog" timestamp="1621901636161">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state x="2571" y="286" width="440" height="519" key="AndroidProcessChooserDialog/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621282912731" />
-    <state width="1562" height="563" key="GridCell.Tab.0.bottom" timestamp="1621283317647">
+    <state x="2571" y="286" width="440" height="519" key="AndroidProcessChooserDialog/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901636161" />
+    <state width="1562" height="453" key="GridCell.Tab.0.bottom" timestamp="1621901964114">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.bottom/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1562" height="563" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621283317647" />
-    <state width="1562" height="563" key="GridCell.Tab.0.center" timestamp="1621283317647">
+    <state width="1562" height="453" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964114" />
+    <state width="1562" height="453" key="GridCell.Tab.0.center" timestamp="1621901964114">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.center/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1562" height="563" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621283317647" />
-    <state width="1562" height="563" key="GridCell.Tab.0.left" timestamp="1621283317646">
+    <state width="1562" height="453" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964114" />
+    <state width="1562" height="453" key="GridCell.Tab.0.left" timestamp="1621901964113">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.left/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608276" />
-    <state width="1562" height="563" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621283317646" />
-    <state width="1562" height="563" key="GridCell.Tab.0.right" timestamp="1621283317647">
+    <state width="1562" height="453" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964113" />
+    <state width="1562" height="453" key="GridCell.Tab.0.right" timestamp="1621901964114">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.right/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1562" height="563" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621283317647" />
+    <state width="1562" height="453" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964114" />
+    <state width="1562" height="453" key="GridCell.Tab.1.bottom" timestamp="1621901964115">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="453" key="GridCell.Tab.1.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964115" />
+    <state width="1562" height="453" key="GridCell.Tab.1.center" timestamp="1621901964115">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="453" key="GridCell.Tab.1.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964115" />
+    <state width="1562" height="453" key="GridCell.Tab.1.left" timestamp="1621901964115">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="453" key="GridCell.Tab.1.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964114" />
+    <state width="1562" height="453" key="GridCell.Tab.1.right" timestamp="1621901964115">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1562" height="453" key="GridCell.Tab.1.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621901964115" />
     <state x="2285" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1621278759065">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2285" y="173" width="1022" height="737" key="SettingsEditor/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621278759065" />
-    <state x="3020" y="232" width="580" height="562" key="Vcs.Push.Dialog.v2" timestamp="1621219228012">
+    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2" timestamp="1621283481828">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2391" y="260" width="800" height="563" key="Vcs.Push.Dialog.v2/0.27.3600.1053@0.27.3600.1053" timestamp="1621176195370" />
-    <state x="3020" y="232" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621219228012" />
+    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621283481828" />
     <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1621282750653">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
@@ -179,7 +196,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlutterRunConfigurationType">
-        <watch expression="responseColor.body" language="Dart" />
+        <watch expression="pokemon.types" language="Dart" />
       </configuration>
     </watches-manager>
   </component>
