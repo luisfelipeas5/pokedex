@@ -21,6 +21,7 @@ class Pokemon {
         return Colors.yellow;
       case 'water':
       case 'ice':
+      case 'dragon':
         return Colors.blue;
       case 'fighting':
       case 'normal':
@@ -33,6 +34,7 @@ class Pokemon {
       case 'shadow':
       case 'dark':
         return Colors.black54;
+      case 'ghost':
       case 'poison':
         return Colors.purple;
       case 'psychic':
