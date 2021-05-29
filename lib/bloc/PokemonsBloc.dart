@@ -21,11 +21,4 @@ class PokemonsBloc {
     _pokemonsStreamController.close();
   }
 
-  onIndexBuilt(int index) {
-    var threshold = 2;
-    if (_pokemons.isNotEmpty && index >= _pokemons.length - threshold) {
-      loadMorePokemons();
-    }
-  }
-
 }

@@ -7,7 +7,7 @@ class Repository {
 
   Future<List<Pokemon>> getPokemons(int offset) async {
     var queryParameters = {
-      "limit": "40",
+      "limit": "30",
       "offset": offset.toString()
     };
     final uri = Uri.https("pokeapi.co", "api/v2/pokemon", queryParameters);

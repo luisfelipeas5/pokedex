@@ -13,17 +13,15 @@ class PokemonListType extends StatelessWidget {
     final types = pokemon.types??[];
     final backgroundColor = pokemon.getColor()?.shade300;
 
-    return SizedBox(
-      height: 40 * types.length.toDouble(),
-      child: ListView.separated(
-        shrinkWrap: true,
-        separatorBuilder: (_, index) => SizedBox(height: 10,),
-        itemBuilder: (_, index) {
-          var type = types[index];
-          return PokemonListTypeItem(type, backgroundColor);
-        },
-        itemCount: types.length,
-      ),
+    return ListView.separated(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      separatorBuilder: (_, index) => SizedBox(height: 10,),
+      itemBuilder: (_, index) {
+        var type = types[index];
+        return PokemonListTypeItem(type, backgroundColor);
+      },
+      itemCount: types.length,
     );
   }
 }
