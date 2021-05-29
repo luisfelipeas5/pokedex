@@ -10,7 +10,7 @@ class Pokemon {
   List<String>? types;
   String? image;
 
-  Color getColor() {
+  MaterialColor? getColor() {
     switch(types?.first) {
       case 'grass':
       case 'bug':
@@ -33,7 +33,7 @@ class Pokemon {
         return Colors.brown;
       case 'shadow':
       case 'dark':
-        return Colors.black54;
+        return Colors.blueGrey;
       case 'ghost':
       case 'poison':
         return Colors.purple;
@@ -42,7 +42,7 @@ class Pokemon {
       case 'fairy':
         return Colors.pink;
       default:
-        return Colors.transparent;
+        return null;
     }
   }
 

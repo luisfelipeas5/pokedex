@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pokedex/model/Pokemon.dart';
+import 'package:pokedex/extensions/StringExtensions.dart';
+
+import 'PokemonListType.dart';
 
 class PokemonListItem extends StatelessWidget {
   PokemonListItem(this.pokemon, {Key? key}) : super(key: key);
@@ -10,61 +13,80 @@ class PokemonListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final numberFormatted = '#' + pokemon.number.toString().padLeft(3, '0');
-
     return Container(
       decoration: BoxDecoration(
         color: pokemon.getColor(),
         borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
-      padding: EdgeInsets.all(10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            numberFormatted,
-            textAlign: TextAlign.end,
-          ),
-          Text(
-            pokemon.name,
-            style: TextStyle(color: Colors.white, fontSize: 16),
-          ),
-          SizedBox(height: 10,),
-          Expanded(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                    child: PokemonListType(pokemon.types ?? [])),
-                Expanded(
-                  child: SvgPicture.network(
-                    pokemon.image ?? "",
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ],
+      padding: EdgeInsets.only(top: 10, left: 10,),
+      child: ClipRRect(
+        borderRadius: BorderRadius.all(Radius.circular(20)),
+        child: Stack(
+          alignment: AlignmentDirectional.bottomEnd,
+          children: [
+            FractionallySizedBox(
+              widthFactor: 0.5,
+              child: Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: buildImage(),
+              )
             ),
-          ),
-        ],
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                buildNumber(pokemon),
+                buildName(),
+                SizedBox(height: 10,),
+                PokemonListType(pokemon),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
-}
 
-class PokemonListType extends StatelessWidget {
-  PokemonListType(this.types, {Key? key}) : super(key: key);
+  Container buildImage() {
+    return Container(
+      padding: EdgeInsets.only(right: 10, bottom: 10),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          alignment: Alignment.topLeft,
+          colorFilter: ColorFilter.mode(
+              pokemon.getColor()?.shade300??Colors.transparent, BlendMode.srcIn
+          ),
+          image: AssetImage("assets/pokeball_logo.jpg"),
+        )
+      ),
+      child: Padding(
+        padding: const EdgeInsets.only(left: 8.0),
+        child: SvgPicture.network(
+          pokemon.image ?? "",
+          fit: BoxFit.contain,
+        ),
+      ),
+    );
+  }
 
-  final List<String> types;
+  Padding buildName() {
+    return Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: Text(
+        pokemon.name.capitalizeFirst(),
+        style: TextStyle(color: Colors.white, fontSize: 16),
+      ),
+    );
+  }
 
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 20 * types.length.toDouble(),
-      child: ListView.builder(
-        itemBuilder: (_, index) {
-          return Text(types[index]);
-        },
-        itemCount: types.length,
+  Padding buildNumber(Pokemon pokemon) {
+    final numberFormatted = '#' + pokemon.number.toString().padLeft(3, '0');
+    return Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: Text(
+        numberFormatted,
+        textAlign: TextAlign.end,
+        style: TextStyle(color: pokemon.getColor()?.shade700, fontSize: 14),
       ),
     );
   }

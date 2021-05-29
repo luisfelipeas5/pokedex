@@ -22,12 +22,762 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="- Colors defined by first type&#10;- Rounded corners added to items">
-      <change afterPath="$PROJECT_DIR$/lib/screens.pokemons/components/PokemonItemList.dart" afterDir="false" />
+    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Pokemon list item: &#10;- item size fixed&#10;- margins added&#10;- image and type size fixed">
+      <change afterPath="$PROJECT_DIR$/assets/pokeball_logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/extensions/StringExtensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens.pokemons/components/PokemonListType.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/10.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/100.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/101.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/102.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/103.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/104.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/105.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/106.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/107.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/108.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/109.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/11.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/110.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/111.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/112.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/113.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/114.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/115.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/116.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/117.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/118.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/119.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/12.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/120.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/121.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/122.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/123.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/124.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/125.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/126.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/127.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/128.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/129.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/13.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/130.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/131.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/132.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/133.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/134.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/135.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/136.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/137.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/138.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/139.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/14.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/140.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/141.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/142.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/143.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/144.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/145.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/146.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/147.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/148.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/149.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/15.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/150.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/151.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/152.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/153.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/154.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/155.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/156.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/157.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/158.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/159.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/16.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/160.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/161.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/162.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/163.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/164.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/165.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/166.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/167.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/168.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/169.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/17.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/170.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/171.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/172.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/173.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/174.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/175.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/176.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/177.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/178.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/179.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/18.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/180.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/181.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/182.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/183.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/184.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/185.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/186.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/187.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/188.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/189.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/19.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/190.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/191.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/192.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/193.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/194.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/195.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/196.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/197.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/198.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/199.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/20.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/200.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-a.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-b.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-c.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-exclamation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-g.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-h.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-i.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-j.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-k.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-l.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-m.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-n.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-o.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-p.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-q.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-question.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-r.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-s.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-t.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-u.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-v.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-w.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-x.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-y.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201-z.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/201.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/202.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/203.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/204.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/205.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/206.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/207.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/208.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/209.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/21.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/210.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/211.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/212.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/213.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/214.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/215.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/216.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/217.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/218.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/219.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/22.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/220.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/221.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/222.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/223.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/224.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/225.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/226.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/227.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/228.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/229.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/23.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/230.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/231.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/232.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/233.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/234.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/235.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/236.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/237.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/238.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/239.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/24.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/240.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/241.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/242.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/243.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/244.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/245.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/246.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/247.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/248.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/249.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/25.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/250.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/251.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/252.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/253.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/254.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/255.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/256.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/257.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/258.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/259.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/26.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/260.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/261.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/262.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/263.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/264.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/265.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/266.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/267.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/268.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/269.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/27.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/270.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/271.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/272.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/273.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/274.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/275.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/276.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/277.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/278.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/279.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/28.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/280.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/281.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/282.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/283.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/284.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/285.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/286.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/287.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/288.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/289.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/29.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/290.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/291.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/292.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/293.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/294.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/295.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/296.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/297.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/298.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/299.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/30.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/300.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/301.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/302.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/303.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/304.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/305.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/306.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/307.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/308.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/309.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/31.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/310.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/311.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/312.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/313.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/314.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/315.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/316.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/317.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/318.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/319.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/32.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/320.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/321.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/322.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/323.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/324.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/325.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/326.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/327.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/328.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/329.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/33.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/330.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/331.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/332.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/333.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/334.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/335.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/336.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/337.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/338.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/339.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/34.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/340.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/341.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/342.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/343.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/344.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/345.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/346.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/347.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/348.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/349.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/35.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/350.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/351-rainy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/351-snowy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/351-sunny.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/351.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/352.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/353.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/354.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/355.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/356.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/357.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/358.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/359.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/36.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/360.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/361.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/362.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/363.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/364.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/365.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/366.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/367.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/368.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/369.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/37.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/370.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/371.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/372.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/373.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/374.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/375.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/376.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/377.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/378.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/379.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/38.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/380.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/381.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/382.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/383.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/384.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/385.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/386-attack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/386-defense.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/386-normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/386-speed.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/386.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/387.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/388.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/389.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/39.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/390.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/391.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/392.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/393.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/394.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/395.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/396.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/397.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/398.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/399.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/40.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/401.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/402.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/403.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/404.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/405.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/406.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/407.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/408.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/409.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/41.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/410.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/411.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/412-plant.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/412-sandy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/412-trash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/412.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/413-plant.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/413-sandy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/413-trash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/413.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/414.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/415.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/416.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/417.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/418.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/419.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/42.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/420.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/421-overcast.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/421-sunshine.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/421.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/422-east.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/422-west.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/422.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/423-east.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/423-west.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/423.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/424.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/425.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/426.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/427.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/428.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/429.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/43.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/430.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/431.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/432.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/433.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/434.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/435.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/436.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/437.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/438.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/439.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/44.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/440.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/441.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/442.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/443.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/444.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/445.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/446.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/447.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/448.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/449.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/45.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/450.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/451.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/452.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/453.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/454.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/455.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/456.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/457.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/458.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/459.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/46.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/460.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/461.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/462.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/463.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/464.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/465.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/466.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/467.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/468.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/469.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/47.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/470.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/471.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/472.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/473.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/474.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/475.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/476.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/477.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/478.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/479-fan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/479-frost.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/479-heat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/479-mow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/479-wash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/479.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/48.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/480.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/481.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/482.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/483.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/484.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/485.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/486.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/487-altered.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/487-origin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/487.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/488.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/489.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/49.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/490.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/491.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/492-land.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/492-sky.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/492.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-bug.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-dragon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-electric.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-fighting.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-fire.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-flying.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-ghost.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-grass.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-ground.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-ice.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-poison.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-psychic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-rock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-steel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493-water.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/493.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/494.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/495.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/496.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/497.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/498.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/499.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/50.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/500.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/501.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/502.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/503.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/504.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/505.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/506.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/507.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/508.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/509.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/51.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/510.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/511.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/512.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/513.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/514.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/515.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/516.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/517.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/518.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/519.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/52.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/520.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/521.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/522.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/523.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/524.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/525.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/526.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/527.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/528.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/529.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/53.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/530.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/531.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/532.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/533.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/534.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/535.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/536.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/537.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/538.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/539.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/54.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/540.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/541.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/542.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/543.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/544.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/545.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/546.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/547.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/548.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/549.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/55.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/550-blue-striped.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/550-red-striped.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/550.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/551.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/552.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/553.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/554.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/555-standard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/555.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/556.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/557.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/558.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/559.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/56.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/560.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/561.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/562.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/563.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/564.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/565.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/566.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/567.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/568.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/569.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/57.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/570.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/571.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/572.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/573.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/574.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/575.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/576.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/577.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/578.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/579.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/58.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/580.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/581.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/582.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/583.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/584.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/585-autumn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/585-spring.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/585-summer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/585-winter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/585.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/586-autumn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/586-spring.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/586-summer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/586-winter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/586.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/587.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/588.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/589.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/59.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/590.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/591.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/592.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/593.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/594.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/595.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/596.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/597.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/598.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/599.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/60.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/600.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/601.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/602.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/603.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/604.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/605.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/606.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/607.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/608.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/609.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/61.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/610.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/611.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/612.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/613.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/614.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/615.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/616.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/617.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/618.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/619.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/62.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/620.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/621.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/622.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/623.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/624.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/625.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/626.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/627.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/628.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/629.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/63.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/630.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/631.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/632.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/633.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/634.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/635.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/636.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/637.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/638.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/639.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/64.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/640.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/641-incarnate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/641-therian.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/641.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/642-incarnate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/642-therian.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/642.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/643.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/644.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/645-incarnate.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/645-therian.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/645.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/646-black.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/646-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/646.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/647-ordinary.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/647-resolute.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/647.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/648-aria.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/648-pirouette.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/648.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/649-burn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/649-chill.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/649-douse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/649-shock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/649.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/65.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/66.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/67.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/68.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/69.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/7.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/70.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/71.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/72.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/73.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/74.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/75.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/76.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/77.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/78.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/79.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/8.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/80.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/81.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/82.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/83.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/84.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/85.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/86.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/87.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/88.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/89.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/9.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/90.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/91.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/92.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/93.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/94.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/95.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/96.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/97.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/98.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/99.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/model/Pokemon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Pokemon.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/Repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens.pokemons/PokemonsPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens.pokemons/PokemonsPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens.pokemons/components/PokemonItemList.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens.pokemons/components/PokemonItemList.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +810,12 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/bloc" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/pokemons" />
+      <recent name="$PROJECT_DIR$/lib/bloc" />
     </key>
   </component>
   <component name="RunManager">
@@ -117,7 +868,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621905485499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Pokemon list item: &#10;- item size fixed&#10;- margins added&#10;- image and type size fixed">
+      <created>1622079821174</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622079821174</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,18 +896,24 @@
     <MESSAGE value="Pagination added" />
     <MESSAGE value="- null safety migration&#10;- safeArea added&#10;- text size and some margin added" />
     <MESSAGE value="- Colors defined by first type&#10;- Rounded corners added to items" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Colors defined by first type&#10;- Rounded corners added to items" />
+    <MESSAGE value="Pokemon list item: &#10;- item size fixed&#10;- margins added&#10;- image and type size fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pokemon list item: &#10;- item size fixed&#10;- margins added&#10;- image and type size fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621177283552">
       <screen x="0" y="27" width="3600" height="1053" />
     </state>
     <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177283552" />
-    <state x="3135" y="229" width="212" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1622077801696">
-      <screen x="1920" y="0" width="1680" height="1050" />
+    <state x="1409" y="257" width="374" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1622304712850">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="2604" y="257" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177353532" />
     <state x="3135" y="229" width="212" height="589" key="#com.intellij.ide.util.MemberChooser/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622077801696" />
+    <state x="1409" y="257" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1622304712850" />
+    <state x="172" y="127" width="1648" height="853" key="AVDManager" timestamp="1622308107317">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="172" y="127" width="1648" height="853" key="AVDManager/72.27.1848.1053@72.27.1848.1053" timestamp="1622308107317" />
     <state x="2571" y="286" width="440" height="519" key="AndroidProcessChooserDialog" timestamp="1622078320167">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
@@ -158,26 +922,30 @@
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2555" y="282" width="472" height="520" key="FileChooserDialogImpl/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622076189313" />
-    <state width="1562" height="604" key="GridCell.Tab.0.bottom" timestamp="1622078920028">
-      <screen x="1920" y="0" width="1680" height="1050" />
+    <state width="1242" height="372" key="GridCell.Tab.0.bottom" timestamp="1622310022116">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.bottom/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1562" height="604" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622078920028" />
-    <state width="1562" height="604" key="GridCell.Tab.0.center" timestamp="1622078920028">
-      <screen x="1920" y="0" width="1680" height="1050" />
+    <state width="1562" height="359" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622162356103" />
+    <state width="1242" height="372" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1622310022116" />
+    <state width="1242" height="372" key="GridCell.Tab.0.center" timestamp="1622310022114">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.center/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1562" height="604" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622078920028" />
-    <state width="1562" height="604" key="GridCell.Tab.0.left" timestamp="1622078920028">
-      <screen x="1920" y="0" width="1680" height="1050" />
+    <state width="1562" height="359" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622162356103" />
+    <state width="1242" height="372" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1622310022114" />
+    <state width="1242" height="372" key="GridCell.Tab.0.left" timestamp="1622310022112">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.left/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608276" />
-    <state width="1562" height="604" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622078920028" />
-    <state width="1562" height="604" key="GridCell.Tab.0.right" timestamp="1622078920028">
-      <screen x="1920" y="0" width="1680" height="1050" />
+    <state width="1562" height="359" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622162356103" />
+    <state width="1242" height="372" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1622310022112" />
+    <state width="1242" height="372" key="GridCell.Tab.0.right" timestamp="1622310022115">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.right/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1562" height="604" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622078920028" />
+    <state width="1562" height="359" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622162356103" />
+    <state width="1242" height="372" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1622310022115" />
     <state width="1562" height="453" key="GridCell.Tab.1.bottom" timestamp="1621906403590">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
@@ -198,19 +966,25 @@
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2381" y="285" width="819" height="514" key="NewModule_or_Project.wizard/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622076195173" />
-    <state x="2285" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1621278759065">
-      <screen x="1920" y="0" width="1680" height="1050" />
+    <state x="474" y="200" width="1022" height="737" key="SettingsEditor" timestamp="1622308166540">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="2285" y="173" width="1022" height="737" key="SettingsEditor/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621278759065" />
-    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2" timestamp="1621905486969">
+    <state x="474" y="200" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1622308166540" />
+    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2" timestamp="1622079822798">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2391" y="260" width="800" height="563" key="Vcs.Push.Dialog.v2/0.27.3600.1053@0.27.3600.1053" timestamp="1621176195370" />
-    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1621905486969" />
-    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1622077949294">
-      <screen x="1920" y="0" width="1680" height="1050" />
+    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622079822798" />
+    <state x="687" y="292" width="618" height="522" key="find.popup" timestamp="1622307978213">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="687" y="292" width="618" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1622307978213" />
+    <state x="665" y="279" width="740" height="680" key="search.everywhere.popup" timestamp="1622308154306">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622077949294" />
+    <state x="665" y="279" width="740" height="680" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1622308154306" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
