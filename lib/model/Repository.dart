@@ -1,17 +1,22 @@
 import 'dart:convert';
 
+import 'package:http/http.dart';
 import 'package:pokedex/model/Pokemon.dart';
-import 'package:http/http.dart' show get;
+import 'package:http/http.dart' as http;
 
 class Repository {
+
+  final client = http.Client();
+  final baseUri = "pokeapi.co/api/v2";
+  final basePrefix = "/api/v2";
 
   Future<List<Pokemon>> getPokemons(int offset) async {
     var queryParameters = {
       "limit": "30",
       "offset": offset.toString()
     };
-    final uri = Uri.https("pokeapi.co", "api/v2/pokemon", queryParameters);
-    final response = await get(uri);
+
+    final response = await _get("pokemon", queryParameters: queryParameters);
     Iterable jsonArrayString = jsonDecode(response.body)["results"];
 
     var futures = List<Future<Pokemon>>.from(
@@ -26,8 +31,7 @@ class Repository {
   
   Future<Pokemon> _inflatePokemonDetail(Pokemon pokemon) async {
     final number = pokemon.number;
-    final uri = Uri.https("pokeapi.co", "api/v2/pokemon/$number");
-    final response = await get(uri);
+    final response = await _get("pokemon/$number");
     final responseJsonDecoded = jsonDecode(response.body);
 
     pokemon.image = responseJsonDecoded["sprites"]["other"]["dream_world"]["front_default"];
@@ -37,4 +41,13 @@ class Repository {
     return pokemon;
   }
 
+  Future<Response> _get(
+      String endpoint,
+      {
+        Map<String, dynamic> queryParameters = const {}
+      }
+    ) {
+    final uri = Uri.https("pokeapi.co", "api/v2/$endpoint", queryParameters);
+    return client.get(uri);
+  }
 }

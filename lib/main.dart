@@ -30,6 +30,8 @@ class MyApp extends StatelessWidget {
           title: 'Pokedex',
           theme: ThemeData(
             primarySwatch: Colors.indigo,
+            backgroundColor: Colors.white,
+            scaffoldBackgroundColor: Colors.white
           ),
           home: PokemonsPage(),
         )

@@ -64,6 +64,9 @@ class PokemonListItem extends StatelessWidget {
         child: SvgPicture.network(
           pokemon.image ?? "",
           fit: BoxFit.contain,
+          placeholderBuilder: (context) {
+            return Expanded(child: Container());
+          },
         ),
       ),
     );
