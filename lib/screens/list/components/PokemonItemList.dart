@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pokedex/model/Pokemon.dart';
 import 'package:pokedex/extensions/StringExtensions.dart';
+import 'package:pokedex/screens/detail/PokemonPage.dart';
 
 import 'PokemonListType.dart';
 
@@ -13,34 +14,45 @@ class PokemonListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Ink(
       decoration: BoxDecoration(
         color: pokemon.getColor(),
         borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
-      padding: EdgeInsets.only(top: 10, left: 10,),
-      child: ClipRRect(
+      child: InkWell(
+        onTap: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => PokemonPage(pokemon))
+          );
+        },
         borderRadius: BorderRadius.all(Radius.circular(20)),
-        child: Stack(
-          alignment: AlignmentDirectional.bottomEnd,
-          children: [
-            FractionallySizedBox(
-              widthFactor: 0.5,
-              child: Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: buildImage(),
-              )
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(20)),
+          child: Padding(
+            padding: EdgeInsets.only(top: 10, left: 10,),
+            child: Stack(
+              alignment: AlignmentDirectional.bottomEnd,
               children: [
-                buildNumber(pokemon),
-                buildName(),
-                SizedBox(height: 10,),
-                PokemonListType(pokemon),
+                FractionallySizedBox(
+                  widthFactor: 0.5,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: buildImage(),
+                  )
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    buildNumber(pokemon),
+                    buildName(),
+                    SizedBox(height: 10,),
+                    PokemonListType(pokemon),
+                  ],
+                )
               ],
-            )
-          ],
+            ),
+          ),
         ),
       ),
     );
@@ -83,11 +95,10 @@ class PokemonListItem extends StatelessWidget {
   }
 
   Padding buildNumber(Pokemon pokemon) {
-    final numberFormatted = '#' + pokemon.number.toString().padLeft(3, '0');
     return Padding(
       padding: const EdgeInsets.only(right: 10),
       child: Text(
-        numberFormatted,
+        pokemon.getNumberFormatted(),
         textAlign: TextAlign.end,
         style: TextStyle(color: pokemon.getColor()?.shade700, fontSize: 14),
       ),

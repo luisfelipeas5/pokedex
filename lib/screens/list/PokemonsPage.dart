@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pokedex/model/Pokemon.dart';
 import 'package:pokedex/bloc/PokemonsBloc.dart';
-import 'package:pokedex/screens.pokemons/components/Loader.dart';
+import 'package:pokedex/screens/list/components/Loader.dart';
 import 'package:provider/provider.dart';
 
-import 'components/EndPageLoader.dart';
-import 'components/Failed.dart';
-import 'components/PokemonItemList.dart';
+import '../../screens/list/components/EndPageLoader.dart';
+import '../../screens/list/components/Failed.dart';
+import '../../screens/list/components/PokemonItemList.dart';
 
 class PokemonsPage extends StatefulWidget {
   @override

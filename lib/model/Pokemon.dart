@@ -54,4 +54,8 @@ class Pokemon {
     return Pokemon(number, name);
   }
 
+  String getNumberFormatted() {
+    return '#' + number.toString().padLeft(3, '0');
+  }
+
 }

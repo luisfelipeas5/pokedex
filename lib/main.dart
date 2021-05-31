@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/bloc/PokemonsBloc.dart';
 import 'package:pokedex/model/Repository.dart';
-import 'package:pokedex/screens.pokemons/PokemonsPage.dart';
+import 'package:pokedex/screens/list/PokemonsPage.dart';
 import 'package:provider/provider.dart';
 
 void main() {
