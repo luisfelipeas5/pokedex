@@ -14,18 +14,17 @@ class PokemonListType extends StatelessWidget {
     final types = pokemon.types??[];
     final backgroundColor = pokemon.getColor()?.shade300;
 
-    var listView = ListView.separated(
-      shrinkWrap: vertical? true : false,
+    return ListView.separated(
+      shrinkWrap: true,
       scrollDirection: vertical? Axis.vertical : Axis.horizontal,
       physics: NeverScrollableScrollPhysics(),
-      separatorBuilder: (_, index) => SizedBox(height: 10,),
+      separatorBuilder: (_, index) => SizedBox(height: 10, width: 10,),
       itemBuilder: (_, index) {
         var type = types[index];
         return PokemonListTypeItem(type, backgroundColor, vertical);
       },
       itemCount: types.length,
     );
-    return vertical? listView : Expanded(child: listView);
   }
 }
 
@@ -60,7 +59,9 @@ class PokemonListTypeItem extends StatelessWidget {
         children: [container],
       );
     } else {
-      return container;
+      return Column(
+        children: [container,],
+      );
     }
   }
 

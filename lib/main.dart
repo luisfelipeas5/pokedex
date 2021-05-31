@@ -31,7 +31,10 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.indigo,
             backgroundColor: Colors.white,
-            scaffoldBackgroundColor: Colors.white
+            scaffoldBackgroundColor: Colors.white,
+            textTheme: TextTheme(
+              headline3: TextStyle(color: Colors.white, fontSize: 36)
+            )
           ),
           home: PokemonsPage(),
         )
