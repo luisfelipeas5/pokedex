@@ -17,25 +17,29 @@ class BasicData extends StatefulWidget {
 class _BasicDataState extends State<BasicData> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                buildName(context),
-                buildListType(),
-              ],
-            ),
-            Align(
-                alignment: Alignment.center,
-                child: buildNumber()
-            )
-          ],
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(left: 20, right: 20),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  buildName(context),
+                  SizedBox(height: 6,),
+                  buildListType(),
+                ],
+              ),
+              Align(
+                  alignment: Alignment.center,
+                  child: buildNumber()
+              )
+            ],
+          ),
+        ],
+      ),
     );
   }
 
@@ -67,7 +71,11 @@ class _BasicDataState extends State<BasicData> {
     return Text(
       widget.pokemon.getNumberFormatted(),
       textAlign: TextAlign.end,
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.w700,
+        fontSize: 16
+      ),
     );
   }
 }
