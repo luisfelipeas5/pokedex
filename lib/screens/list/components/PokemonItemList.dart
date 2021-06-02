@@ -24,7 +24,7 @@ class PokemonListItem extends StatelessWidget {
       child: InkWell(
         onTap: () {
           final routerState = Provider.of<RouterState>(context, listen: false);
-          routerState.push(DetailRoutePath(pokemon));
+          routerState.push(DetailRoutePath.fromPokemon(pokemon));
         },
         borderRadius: BorderRadius.all(Radius.circular(20)),
         child: ClipRRect(

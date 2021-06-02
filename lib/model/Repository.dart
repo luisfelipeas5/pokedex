@@ -21,26 +21,13 @@ class Repository {
 
     var futures = List<Future<Pokemon>>.from(
         jsonArrayString.map((jsonElement) async {
-          var pokemonFromList = Pokemon.fromJson(jsonElement);
-          await _inflatePokemonDetail(pokemonFromList);
-          return pokemonFromList;
+          var pokemonFromList = Pokemon.fromListJson(jsonElement);
+          return await getPokemon(pokemonFromList.number);
         })
     );
     return Future.wait(futures);
   }
   
-  Future<Pokemon> _inflatePokemonDetail(Pokemon pokemon) async {
-    final number = pokemon.number;
-    final response = await _get("pokemon/$number");
-    final responseJsonDecoded = jsonDecode(response.body);
-
-    pokemon.image = responseJsonDecoded["sprites"]["other"]["dream_world"]["front_default"];
-    final Iterable typesJson = responseJsonDecoded['types'];
-    pokemon.types = List<String>.from(typesJson.map((e) => e["type"]["name"]));
-
-    return pokemon;
-  }
-
   Future<Response> _get(
       String endpoint,
       {
@@ -49,5 +36,11 @@ class Repository {
     ) {
     final uri = Uri.https("pokeapi.co", "api/v2/$endpoint", queryParameters);
     return client.get(uri);
+  }
+
+  Future<Pokemon> getPokemon(int number) async {
+    final response = await _get("pokemon/$number");
+    final responseJsonDecoded = jsonDecode(response.body);
+    return Pokemon.fromJson(responseJsonDecoded);
   }
 }

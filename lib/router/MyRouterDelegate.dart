@@ -11,6 +11,7 @@ import 'RouterState.dart';
 class MyRouterDelegate extends RouterDelegate<RoutePath>
     with ChangeNotifier, PopNavigatorRouterDelegateMixin<RoutePath> {
 
+  final List<MaterialPage> _pages = [];
   RouterState routerState;
 
   final GlobalKey<NavigatorState> navigatorKey;
@@ -39,26 +40,35 @@ class MyRouterDelegate extends RouterDelegate<RoutePath>
   }
 
   List<Page> _buildPages() {
-    final routePath = currentConfiguration;
-    if (routePath is DetailRoutePath) {
-      return _buildDetailPages(routePath);
-    } else {
-      return _buildListPages();
+    switch (routerState.action) {
+      case RouterAction.PUSH:
+        final routePath = currentConfiguration;
+        if (routePath is DetailRoutePath) {
+          _pages.add(_buildDetailPages(routePath));
+        } else {
+          _pages.add(_buildListPage());
+        }
+        break;
+      case RouterAction.POP:
+        _pages.removeLast();
+        break;
     }
+
+    return List.of(_pages);
   }
 
-  List<Page> _buildListPages() {
-    return [_buildListPage()];
-  }
+  MaterialPage _buildDetailPages(DetailRoutePath routePath) {
+    final pokemon = routePath.pokemon;
+    final number = routePath.number;
 
-  List<Page> _buildDetailPages(DetailRoutePath routePath) {
-    return [
-      _buildListPage(),
-      MaterialPage(
-          key: ValueKey(DetailRoutePath.KEY),
-          name: DetailRoutePath.PATH,
-          child: PokemonPage(routePath.pokemon))
-    ];
+    var pokemonPage = pokemon != null ?
+              PokemonPage.fromPokemon(pokemon) : PokemonPage.fromNumber(number);
+
+    return MaterialPage(
+        key: ValueKey(DetailRoutePath.KEY),
+        name: DetailRoutePath.PATH,
+        child: pokemonPage
+    );
   }
 
   MaterialPage _buildListPage() {

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:pokedex/model/Pokemon.dart';
 
 import 'routes/RoutePath.dart';
+import 'package:pokedex/extensions/ListExtensions.dart';
 
 class MyRouteInformationParser extends RouteInformationParser<RoutePath> {
 
@@ -17,8 +18,13 @@ class MyRouteInformationParser extends RouteInformationParser<RoutePath> {
 
       case DetailRoutePath.PATH:
         var state = routeInformation.state;
+        var argument = uri.pathSegments.getOrNull(1);
         if (state is Pokemon) {
-          return DetailRoutePath(state);
+          return DetailRoutePath.fromPokemon(state);
+        } else if (state is int) {
+          return DetailRoutePath.fromNumber(state);
+        } else if (argument != null) {
+          return DetailRoutePath.fromNumber(int.parse(argument));
         }
         break;
     }

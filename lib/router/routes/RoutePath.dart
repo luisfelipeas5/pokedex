@@ -17,9 +17,18 @@ class DetailRoutePath extends RoutePath {
   static const KEY = "PokemonDetail";
   static const PATH = "/pokemon";
 
-  final Pokemon pokemon;
+  final Pokemon? pokemon;
+  final int? number;
 
-  DetailRoutePath(this.pokemon);
+  factory DetailRoutePath.fromPokemon(Pokemon pokemon) {
+    return DetailRoutePath._internal(pokemon: pokemon, number: pokemon.number);
+  }
+
+  factory DetailRoutePath.fromNumber(int number) {
+    return DetailRoutePath._internal(number: number);
+  }
+
+  DetailRoutePath._internal({this.pokemon, this.number});
 
   @override
   String get path => PATH;

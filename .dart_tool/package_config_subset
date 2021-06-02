@@ -6,6 +6,10 @@ async
 2.12
 file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0/
 file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0/lib/
+bloc
+2.12
+file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-7.0.0/
+file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-7.0.0/lib/
 boolean_selector
 2.12
 file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/
@@ -34,6 +38,10 @@ fake_async
 2.12
 file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/
 file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0/lib/
+flutter_bloc
+2.12
+file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-7.0.1/
+file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-7.0.1/lib/
 flutter_svg
 2.12
 file:///home/luisfelipeas5/flutter_linux_2.0.6-stable/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.22.0/

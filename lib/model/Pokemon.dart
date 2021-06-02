@@ -46,12 +46,24 @@ class Pokemon {
     }
   }
 
-  factory Pokemon.fromJson(Map<String, dynamic> json) {
+  factory Pokemon.fromListJson(Map<String, dynamic> json) {
     final pokemonUrl = Uri.parse(json['url']);
     var pathSegments = pokemonUrl.pathSegments;
     final number = int.parse(pathSegments[pathSegments.length - 2]);
     final name = json['name'];
     return Pokemon(number, name);
+  }
+
+  factory Pokemon.fromJson(Map<String, dynamic> json) {
+    final number = json["id"];
+    final name = json['name'];
+
+    var pokemon = Pokemon(number, name);
+    pokemon.image = json["sprites"]["other"]["dream_world"]["front_default"];
+    final Iterable typesJson = json['types'];
+    pokemon.types = List<String>.from(typesJson.map((e) => e["type"]["name"]));
+
+    return pokemon;
   }
 
   String getNumberFormatted() {

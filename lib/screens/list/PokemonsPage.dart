@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pokedex/model/Pokemon.dart';
-import 'package:pokedex/bloc/PokemonsBloc.dart';
-import 'package:pokedex/screens/list/components/Loader.dart';
+import 'package:pokedex/model/Repository.dart';
+import 'package:pokedex/screens/list/PokemonsBloc.dart';
+import 'package:pokedex/screens/list/PokemonsEvent.dart';
+import 'package:pokedex/screens/list/PokemonsState.dart';
 import 'package:provider/provider.dart';
 
-import '../../screens/list/components/EndPageLoader.dart';
-import '../../screens/list/components/Failed.dart';
 import '../../screens/list/components/PokemonItemList.dart';
 
 class PokemonsPage extends StatefulWidget {
@@ -15,6 +16,8 @@ class PokemonsPage extends StatefulWidget {
 }
 
 class _PokemonsPageState extends State<PokemonsPage> {
+  final _bloc = PokemonsBloc();
+
   final _targetElevation = 6.0;
   var _elevation = 0.0;
   final _scrollController = ScrollController();
@@ -22,6 +25,9 @@ class _PokemonsPageState extends State<PokemonsPage> {
   @override
   void initState() {
     super.initState();
+
+    _bloc.repository = Provider.of<Repository>(context, listen: false);
+
     _scrollController.addListener(() {
       double newElevation = _scrollController.offset > 1 ? _targetElevation : 0;
       if (_elevation != newElevation) {
@@ -31,16 +37,15 @@ class _PokemonsPageState extends State<PokemonsPage> {
       }
     });
 
-    final bloc = Provider.of<PokemonsBloc>(context, listen: false);
     _scrollController.addListener(() {
       var triggerFetchMoreSize =
           0.9 * _scrollController.position.maxScrollExtent;
-
       if (_scrollController.position.pixels > triggerFetchMoreSize) {
-        bloc.loadMorePokemons();
+        _bloc.add(PokemonsLoadEvent());
       }
     });
-    bloc.loadMorePokemons();
+
+    _bloc.add(PokemonsLoadEvent());
   }
 
   @override
@@ -54,48 +59,84 @@ class _PokemonsPageState extends State<PokemonsPage> {
             style: TextStyle(fontSize: 24, color: Colors.black),
           ),
         ),
-        body: Stack(children: [
-          Row(
-            children: [
-              Expanded(child: Failed()),
-            ],
+        body: BlocProvider(
+          create: (_) => _bloc,
+          child: BlocBuilder<PokemonsBloc, PokemonsState>(
+            builder: (context, state) {
+              return Stack(children: [
+                if (state is PokemonsLoadedFailedState)
+                  _buildFailed(),
+                if (state is PokemonsLoadingState && state.pokemonsLength == 0)
+                  _buildLoader(),
+                if (state is PokemonsLoadedState)
+                  buildList(state.pokemons),
+                if (state is PokemonsLoadingState && state.pokemonsLength > 0)
+                  _buildEndPageLoader(),
+              ]);
+            },
           ),
-          Loader(),
-          buildList(context),
-          Align(alignment: Alignment.bottomCenter, child: EndPageLoader()),
-        ]));
+        ));
   }
 
-  Widget buildList(BuildContext context) {
-    final bloc = Provider.of<PokemonsBloc>(context, listen: false);
-    return StreamBuilder<List<Pokemon>>(
-        stream: bloc.pokemonsStreamController,
-        initialData: [],
-        builder: (context, snapshot) {
-          final pokemons = snapshot.data ?? [];
-          return SafeArea(
-            child: Expanded(
-              child: GridView.builder(
-                controller: _scrollController,
-                padding:
-                    EdgeInsets.only(top: 12, right: 16, left: 16, bottom: 16),
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    childAspectRatio: 1.3,
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 10,
-                    crossAxisSpacing: 10),
-                itemBuilder: (_, index) {
-                  return PokemonListItem(pokemons[index]);
-                },
-                itemCount: pokemons.length,
-              ),
-            ),
-          );
-        });
+  Row _buildFailed() {
+    return Row(
+      children: [
+        Expanded(
+            child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Text(
+            "Houve um erro no carregamento da lista de pokemons",
+            style: TextStyle(fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+        )),
+      ],
+    );
+  }
+
+  Row _buildLoader() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Padding(
+          padding: EdgeInsets.all(12),
+          child: CircularProgressIndicator(),
+        ),
+      ],
+    );
+  }
+
+  Align _buildEndPageLoader() {
+    return Align(
+        alignment: Alignment.bottomCenter,
+        child: Expanded(
+          child: LinearProgressIndicator(),
+        ));
+  }
+
+  Widget buildList(List<Pokemon> pokemons) {
+    return SafeArea(
+      child: Expanded(
+        child: GridView.builder(
+          controller: _scrollController,
+          padding: EdgeInsets.only(top: 12, right: 16, left: 16, bottom: 16),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              childAspectRatio: 1.3,
+              crossAxisCount: 2,
+              mainAxisSpacing: 10,
+              crossAxisSpacing: 10),
+          itemBuilder: (_, index) {
+            return PokemonListItem(pokemons[index]);
+          },
+          itemCount: pokemons.length,
+        ),
+      ),
+    );
   }
 
   @override
   void dispose() {
+    _bloc.close();
     _scrollController.dispose();
     super.dispose();
   }
