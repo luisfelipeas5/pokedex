@@ -22,39 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Router applied">
-      <change afterPath="$PROJECT_DIR$/lib/router/MyBackButtonDispatcher.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/router/components/MyBackButton.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonBloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonEvent.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonState.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/list/PokemonsEvent.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/list/PokemonsState.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Using Bloc plugin: BlocProvider and BlocBuilder">
+      <change afterPath="$PROJECT_DIR$/lib/screens/detail/DetailRoutePath.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/screens/list/ListRoutePath.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/bloc/PokemonsBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/list/PokemonsBloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/extensions/ListExtensions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/extensions/ListExtensions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/Pokemon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Pokemon.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/Repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/router/MyBackButtonDispatcher.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/router/MyBackButtonDispatcher.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/router/MyRouteInformationParser.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/router/MyRouteInformationParser.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/router/MyRouterDelegate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/router/MyRouterDelegate.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/router/RouterState.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/router/RouterState.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/router/routes/RoutePath.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/router/routes/RoutePath.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/detail/PokemonPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/list/PokemonsPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/list/PokemonsPage.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/list/components/EndPageLoader.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/list/components/Failed.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/list/components/Loader.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/list/components/PokemonItemList.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/list/components/PokemonItemList.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622640796569</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Using Bloc plugin: BlocProvider and BlocBuilder">
+      <created>1622654445208</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1622654445208</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,74 +216,79 @@
     <MESSAGE value="Pokemon detail: type list horizontal added" />
     <MESSAGE value="Pokemon detail: main image and pokeball image added" />
     <MESSAGE value="Router applied" />
-    <option name="LAST_COMMIT_MESSAGE" value="Router applied" />
+    <MESSAGE value="Using Bloc plugin: BlocProvider and BlocBuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Using Bloc plugin: BlocProvider and BlocBuilder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621177283552">
       <screen x="0" y="27" width="3600" height="1053" />
     </state>
     <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177283552" />
-    <state x="2336" y="207" width="591" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1622653895988">
+    <state x="2336" y="207" width="591" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1622662047092">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2604" y="257" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.3600.1053@0.27.3600.1053" timestamp="1621177353532" />
-    <state x="2336" y="207" width="591" height="589" key="#com.intellij.ide.util.MemberChooser/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622653895988" />
+    <state x="2336" y="207" width="591" height="589" key="#com.intellij.ide.util.MemberChooser/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622662047092" />
     <state x="1409" y="257" width="374" height="569" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1622485751878" />
+    <state x="2275" y="283" key="#xdebugger.evaluate" timestamp="1622662655275">
+      <screen x="1920" y="0" width="1680" height="1050" />
+    </state>
+    <state x="2275" y="283" key="#xdebugger.evaluate/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622662655275" />
     <state x="172" y="127" width="1648" height="853" key="AVDManager" timestamp="1622479668631">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="172" y="127" width="1648" height="853" key="AVDManager/72.27.1848.1053@72.27.1848.1053" timestamp="1622479668631" />
-    <state x="2571" y="286" width="440" height="526" key="AndroidProcessChooserDialog" timestamp="1622641573548">
+    <state x="2571" y="286" width="440" height="526" key="AndroidProcessChooserDialog" timestamp="1622660040181">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state x="2571" y="286" width="440" height="526" key="AndroidProcessChooserDialog/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622641573548" />
+    <state x="2571" y="286" width="440" height="526" key="AndroidProcessChooserDialog/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622660040181" />
     <state x="2555" y="282" width="472" height="520" key="FileChooserDialogImpl" timestamp="1622644861435">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2555" y="282" width="472" height="520" key="FileChooserDialogImpl/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622644861435" />
-    <state width="1015" height="435" key="GridCell.Tab.0.bottom" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.0.bottom" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.bottom/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1015" height="435" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="598" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032929" />
-    <state width="1015" height="435" key="GridCell.Tab.0.center" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.0.center" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.center/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1015" height="435" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="598" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032926" />
-    <state width="1015" height="435" key="GridCell.Tab.0.left" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.0.left" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.left/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608276" />
-    <state width="1015" height="435" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="598" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032925" />
-    <state width="1015" height="435" key="GridCell.Tab.0.right" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.0.right" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.right/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1015" height="435" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="598" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032927" />
-    <state width="1015" height="435" key="GridCell.Tab.1.bottom" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.1.bottom" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state width="1015" height="435" key="GridCell.Tab.1.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.1.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="390" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1622321862304" />
-    <state width="1015" height="435" key="GridCell.Tab.1.center" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.1.center" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state width="1015" height="435" key="GridCell.Tab.1.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.1.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="390" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1622321862304" />
-    <state width="1015" height="435" key="GridCell.Tab.1.left" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.1.left" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state width="1015" height="435" key="GridCell.Tab.1.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.1.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="390" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1622321862304" />
-    <state width="1015" height="435" key="GridCell.Tab.1.right" timestamp="1622654219232">
+    <state width="1005" height="254" key="GridCell.Tab.1.right" timestamp="1622663385888">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state width="1015" height="435" key="GridCell.Tab.1.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654219232" />
+    <state width="1005" height="254" key="GridCell.Tab.1.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663385888" />
     <state width="1802" height="390" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1622321862304" />
     <state x="2381" y="285" width="819" height="514" key="NewModule_or_Project.wizard" timestamp="1622076195173">
       <screen x="1920" y="0" width="1680" height="1050" />
@@ -310,11 +299,11 @@
     </state>
     <state x="2285" y="173" width="1022" height="737" key="SettingsEditor/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622499531789" />
     <state x="474" y="200" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1622308166540" />
-    <state x="2670" y="202" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1622640797106">
+    <state x="2670" y="202" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1622654446126">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2391" y="260" width="800" height="563" key="Vcs.Push.Dialog.v2/0.27.3600.1053@0.27.3600.1053" timestamp="1621176195370" />
-    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622640797106" />
+    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654446126" />
     <state x="897" y="230" width="800" height="563" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1622484458156" />
     <state x="2045" y="135" width="944" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1622641771263">
       <screen x="1920" y="0" width="1680" height="1050" />
@@ -329,10 +318,10 @@
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="600" height="428" key="javadoc.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622418786528" />
-    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1622654254662">
+    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1622662457630">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622654254662" />
+    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622662457630" />
     <state x="665" y="279" width="740" height="680" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1622485641774" />
   </component>
   <component name="XDebuggerManager">
@@ -343,7 +332,8 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="FlutterRunConfigurationType">
-        <watch expression="jsonArrayString[1000]" language="Dart" />
+        <watch expression="routePath.key" language="Dart" />
+        <watch expression="routePaths" language="Dart" />
       </configuration>
     </watches-manager>
   </component>

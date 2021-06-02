@@ -2,9 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:pokedex/router/routes/RoutePath.dart';
-import 'package:pokedex/screens/detail/PokemonPage.dart';
-import 'package:pokedex/screens/list/PokemonsPage.dart';
 import 'package:pokedex/extensions/ListExtensions.dart';
+import 'package:pokedex/screens/list/ListRoutePath.dart';
 
 import 'RouterState.dart';
 
@@ -27,7 +26,7 @@ class MyRouterDelegate extends RouterDelegate<RoutePath>
 
   @override
   Future<void> setNewRoutePath(RoutePath configuration) {
-    routerState.push(configuration);
+    routerState.deepLinkPush(configuration);
     return SynchronousFuture(null);
   }
 
@@ -42,40 +41,42 @@ class MyRouterDelegate extends RouterDelegate<RoutePath>
   List<Page> _buildPages() {
     switch (routerState.action) {
       case RouterAction.PUSH:
-        final routePath = currentConfiguration;
-        if (routePath is DetailRoutePath) {
-          _pages.add(_buildDetailPages(routePath));
-        } else {
-          _pages.add(_buildListPage());
-        }
+        _onPushAction();
         break;
       case RouterAction.POP:
-        _pages.removeLast();
+        _onPopAction();
+        break;
+      case RouterAction.DEEP_LINK:
+        _onDeepLinkAction();
         break;
     }
-
     return List.of(_pages);
   }
 
-  MaterialPage _buildDetailPages(DetailRoutePath routePath) {
-    final pokemon = routePath.pokemon;
-    final number = routePath.number;
-
-    var pokemonPage = pokemon != null ?
-              PokemonPage.fromPokemon(pokemon) : PokemonPage.fromNumber(number);
-
-    return MaterialPage(
-        key: ValueKey(DetailRoutePath.KEY),
-        name: DetailRoutePath.PATH,
-        child: pokemonPage
-    );
+  _onPopAction() {
+    _pages.removeLast();
   }
 
-  MaterialPage _buildListPage() {
+  _onPushAction() {
+    final routePath = currentConfiguration ?? ListRoutePath();
+    MaterialPage page = _getMaterialPage(routePath);
+    _pages.add(page);
+  }
+
+  _onDeepLinkAction() {
+    final pages = routerState.routePaths.map(
+            (routePath) => _getMaterialPage(routePath)
+    );
+
+    _pages.clear();
+    _pages.addAll(pages);
+  }
+
+  MaterialPage _getMaterialPage(RoutePath routePath) {
     return MaterialPage(
-      key: ValueKey(ListRoutePath.KEY),
-      name: ListRoutePath.PATH,
-      child: PokemonsPage()
+        key: ValueKey(routePath.key),
+        name: routePath.path,
+        child: routePath.widget
     );
   }
 }

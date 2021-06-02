@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pokedex/model/Pokemon.dart';
 import 'package:pokedex/extensions/StringExtensions.dart';
 import 'package:pokedex/router/RouterState.dart';
-import 'package:pokedex/router/routes/RoutePath.dart';
+import 'package:pokedex/screens/detail/DetailRoutePath.dart';
 import 'package:provider/provider.dart';
 
 import 'PokemonListType.dart';

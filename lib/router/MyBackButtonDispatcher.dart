@@ -10,7 +10,7 @@ class MyBackButtonDispatcher extends RootBackButtonDispatcher {
 
   // 3
   Future<bool> didPopRoute() {
-    routerState.pop();
-    return SynchronousFuture(true);
+    var pop = routerState.pop();
+    return SynchronousFuture(pop);
   }
 }
