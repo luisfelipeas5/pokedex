@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/bloc/PokemonsBloc.dart';
 import 'package:pokedex/model/Repository.dart';
-import 'package:pokedex/screens/list/PokemonsPage.dart';
+import 'package:pokedex/router/MyRouterDelegate.dart';
+import 'package:pokedex/router/RouterState.dart';
 import 'package:provider/provider.dart';
+
+import 'router/MyRouteInformationParser.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+
+  final routeInformationParser = MyRouteInformationParser();
+  final RouterState routerState;
+  late final MyRouterDelegate routerDelegate;
+
+  MyApp(): routerState = RouterState() {
+    routerDelegate = MyRouterDelegate(routerState);
+  }
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -25,8 +37,9 @@ class MyApp extends StatelessWidget {
               final bloc = Provider.of<PokemonsBloc>(context, listen: false);
               bloc.dispose();
             }),
+          ChangeNotifierProvider.value(value: routerState)
         ],
-        child: MaterialApp(
+        child: MaterialApp.router(
           title: 'Pokedex',
           theme: ThemeData(
             primarySwatch: Colors.indigo,
@@ -36,7 +49,8 @@ class MyApp extends StatelessWidget {
               headline3: TextStyle(color: Colors.white, fontSize: 36)
             )
           ),
-          home: PokemonsPage(),
+          routeInformationParser: routeInformationParser,
+          routerDelegate: routerDelegate,
         )
     );
   }

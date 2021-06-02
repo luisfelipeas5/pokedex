@@ -3,7 +3,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pokedex/model/Pokemon.dart';
 import 'package:pokedex/extensions/StringExtensions.dart';
-import 'package:pokedex/screens/detail/PokemonPage.dart';
+import 'package:pokedex/router/RouterState.dart';
+import 'package:pokedex/router/routes/RoutePath.dart';
+import 'package:provider/provider.dart';
 
 import 'PokemonListType.dart';
 
@@ -21,10 +23,8 @@ class PokemonListItem extends StatelessWidget {
       ),
       child: InkWell(
         onTap: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => PokemonPage(pokemon))
-          );
+          final routerState = Provider.of<RouterState>(context, listen: false);
+          routerState.push(DetailRoutePath(pokemon));
         },
         borderRadius: BorderRadius.all(Radius.circular(20)),
         child: ClipRRect(
