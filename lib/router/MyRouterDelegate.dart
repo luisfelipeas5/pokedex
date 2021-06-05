@@ -12,7 +12,6 @@ class MyRouterDelegate extends RouterDelegate<RoutePath>
 
   final List<MaterialPage> _pages = [];
   RouterState routerState;
-
   final GlobalKey<NavigatorState> navigatorKey;
 
   MyRouterDelegate(this.routerState) : navigatorKey = GlobalKey<NavigatorState>() {
@@ -40,12 +39,10 @@ class MyRouterDelegate extends RouterDelegate<RoutePath>
 
   List<Page> _buildPages() {
     switch (routerState.action) {
-      case RouterAction.PUSH:
-        _onPushAction();
-        break;
       case RouterAction.POP:
         _onPopAction();
         break;
+      case RouterAction.PUSH:
       case RouterAction.DEEP_LINK:
         _onDeepLinkAction();
         break;

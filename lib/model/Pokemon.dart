@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:pokedex/model/Ability.dart';
 
 class Pokemon {
 
@@ -9,6 +10,9 @@ class Pokemon {
   final String name;
   List<String>? types;
   String? image;
+  int? height;
+  int? weight;
+  List<AbilitySlot>? abilities;
 
   MaterialColor? getColor() {
     switch(types?.first) {
@@ -62,9 +66,16 @@ class Pokemon {
     pokemon.image = json["sprites"]["other"]["dream_world"]["front_default"];
     final Iterable typesJson = json['types'];
     pokemon.types = List<String>.from(typesJson.map((e) => e["type"]["name"]));
+    pokemon.height = json["height"];
+    pokemon.weight = json["weight"];
+
+    Iterable abilities = json["abilities"];
+    pokemon.abilities = abilities.map((e) => AbilitySlot.fromJson(e)).toList();
 
     return pokemon;
   }
+
+  String? get abilitiesToString => abilities?.map((e) => e.ability?.name).join(", ");
 
   String getNumberFormatted() {
     return '#' + number.toString().padLeft(3, '0');
