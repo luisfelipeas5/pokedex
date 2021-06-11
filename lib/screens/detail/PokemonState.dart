@@ -5,9 +5,11 @@ import 'package:pokedex/model/Pokemon.dart';
 @immutable
 abstract class PokemonState {}
 
-class PokemonLoadingState extends PokemonState {
+class PokemonLoadingState extends PokemonState {}
 
-}
+class SpeciesLoadingState extends PokemonState {}
+
+class SpeciesLoaded extends PokemonState {}
 
 class PokemonLoadedState extends PokemonState {
 

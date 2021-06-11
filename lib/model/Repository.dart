@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart';
 import 'package:pokedex/model/Pokemon.dart';
 import 'package:http/http.dart' as http;
+import 'package:pokedex/model/species/Species.dart';
 
 class Repository {
 
@@ -42,5 +43,10 @@ class Repository {
     final response = await _get("pokemon/$number");
     final responseJsonDecoded = jsonDecode(response.body);
     return Pokemon.fromJson(responseJsonDecoded);
+  }
+
+  Future<Species> getSpecies(int number) async {
+    final response = await _get("pokemon-species/$number");
+    return Species.fromJson(jsonDecode(response.body));
   }
 }

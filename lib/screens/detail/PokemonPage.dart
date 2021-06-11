@@ -65,8 +65,9 @@ class _PokemonPageState extends State<PokemonPage> {
                 height: 48, width: 48, child: CircularProgressIndicator()),
           );
         }
-        final loadedState = state as PokemonLoadedState;
-        final pokemon = loadedState.pokemon;
+        final pokemon = _pokemonBloc.pokemon;
+        if (pokemon == null) return Container();
+
         return Scaffold(
           appBar: AppBar(
             leading: MyBackButton(),

@@ -22,17 +22,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Deep link working">
-      <change afterPath="$PROJECT_DIR$/lib/model/Ability.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/screens/detail/components/AboutView.dart" afterDir="false" />
+    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="About view created and being filled">
+      <change afterPath="$PROJECT_DIR$/assets/female.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/male.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/species/EggGroup.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/species/EggGroup.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/species/Species.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/model/species/Species.g.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/Pokemon.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Pokemon.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/router/MyRouterDelegate.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/router/MyRouterDelegate.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/Repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/model/Repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/detail/PokemonBloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonBloc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/detail/PokemonPage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonPage.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/detail/PokemonState.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonState.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/screens/detail/components/AboutView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/components/AboutView.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/screens/detail/components/PokemonDetail.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/components/PokemonDetail.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokedex.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pokedex.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +61,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sce5EuZYMPls9ptqaXFyAbjgr8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="compactDirectories" value="true" />
@@ -58,6 +71,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -67,13 +81,14 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/model/species" />
       <recent name="$PROJECT_DIR$/lib/screens/list" />
       <recent name="$PROJECT_DIR$/assets/pokemons" />
       <recent name="$PROJECT_DIR$/lib/bloc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -196,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622663412068</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="About view created and being filled">
+      <created>1622904881813</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622904881813</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +234,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="- Created a ListView with .builder&#10;- Image assets added and loaded with SvgImage&#10;- Provider + Bloc added&#10;- Calling PokeAPI to list first Pokemons" />
     <MESSAGE value="Pagination added" />
@@ -227,7 +250,8 @@
     <MESSAGE value="Router applied" />
     <MESSAGE value="Using Bloc plugin: BlocProvider and BlocBuilder" />
     <MESSAGE value="Deep link working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deep link working" />
+    <MESSAGE value="About view created and being filled" />
+    <option name="LAST_COMMIT_MESSAGE" value="About view created and being filled" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2470" y="340" width="642" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621177283552">
@@ -256,29 +280,29 @@
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2555" y="282" width="472" height="520" key="FileChooserDialogImpl/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622644861435" />
-    <state width="1016" height="380" key="GridCell.Tab.0.bottom" timestamp="1622904546545">
+    <state width="986" height="380" key="GridCell.Tab.0.bottom" timestamp="1623377870584">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.bottom/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1016" height="380" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622904546545" />
+    <state width="986" height="380" key="GridCell.Tab.0.bottom/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1623377870584" />
     <state width="1802" height="598" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032929" />
-    <state width="1016" height="380" key="GridCell.Tab.0.center" timestamp="1622904546545">
+    <state width="986" height="380" key="GridCell.Tab.0.center" timestamp="1623377870583">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.center/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1016" height="380" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622904546545" />
+    <state width="986" height="380" key="GridCell.Tab.0.center/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1623377870583" />
     <state width="1802" height="598" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032926" />
-    <state width="1016" height="380" key="GridCell.Tab.0.left" timestamp="1622904546545">
+    <state width="986" height="380" key="GridCell.Tab.0.left" timestamp="1623377870583">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.left/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608276" />
-    <state width="1016" height="380" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622904546545" />
+    <state width="986" height="380" key="GridCell.Tab.0.left/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1623377870583" />
     <state width="1802" height="598" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032925" />
-    <state width="1016" height="380" key="GridCell.Tab.0.right" timestamp="1622904546545">
+    <state width="986" height="380" key="GridCell.Tab.0.right" timestamp="1623377870583">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state width="1562" height="359" key="GridCell.Tab.0.right/0.27.3600.1053@0.27.3600.1053" timestamp="1621178608277" />
-    <state width="1016" height="380" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622904546545" />
+    <state width="986" height="380" key="GridCell.Tab.0.right/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1623377870583" />
     <state width="1802" height="598" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1622486032927" />
     <state width="1005" height="254" key="GridCell.Tab.1.bottom" timestamp="1622665791443">
       <screen x="1920" y="0" width="1680" height="1050" />
@@ -309,20 +333,20 @@
     </state>
     <state x="2285" y="173" width="1022" height="737" key="SettingsEditor/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622499531789" />
     <state x="474" y="200" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1622308166540" />
-    <state x="2670" y="202" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1622663412998">
+    <state x="2670" y="202" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1622904883234">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2391" y="260" width="800" height="563" key="Vcs.Push.Dialog.v2/0.27.3600.1053@0.27.3600.1053" timestamp="1621176195370" />
-    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622663412998" />
+    <state x="2670" y="202" width="580" height="562" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622904883234" />
     <state x="897" y="230" width="800" height="563" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1622484458156" />
     <state x="2045" y="135" width="944" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1622641771263">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2045" y="135" width="944" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622641771263" />
-    <state x="2479" y="264" width="588" height="580" key="find.popup" timestamp="1622730511767">
+    <state x="2479" y="264" width="588" height="580" key="find.popup" timestamp="1623373984786">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state x="2479" y="264" width="588" height="580" key="find.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622730511767" />
+    <state x="2479" y="264" width="588" height="580" key="find.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1623373984786" />
     <state x="687" y="292" width="618" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1622307978213" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1622418786528">
       <screen x="1920" y="0" width="1680" height="1050" />
@@ -332,10 +356,10 @@
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
     <state x="2192" y="244" key="run.anything.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622852097363" />
-    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1622846328065">
+    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup" timestamp="1623376452367">
       <screen x="1920" y="0" width="1680" height="1050" />
     </state>
-    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622846328065" />
+    <state x="2459" y="251" width="672" height="678" key="search.everywhere.popup/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1623376452367" />
     <state x="665" y="279" width="740" height="680" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1622485641774" />
   </component>
   <component name="XDebuggerManager">
