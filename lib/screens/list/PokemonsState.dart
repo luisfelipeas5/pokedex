@@ -17,6 +17,9 @@ class PokemonsLoadedState extends PokemonsState {
   PokemonsLoadedState(this.pokemons);
 }
 
-class PokemonsLoadedFailedState extends PokemonsState {
+class PokemonsLoadedFailedState extends PokemonsLoadedState {
+  final List<Pokemon> pokemons;
+  int get pokemonsLength => pokemons.length;
 
+  PokemonsLoadedFailedState(this.pokemons): super(pokemons);
 }

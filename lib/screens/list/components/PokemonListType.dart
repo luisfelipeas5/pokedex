@@ -20,7 +20,7 @@ class PokemonListType extends StatelessWidget {
       physics: NeverScrollableScrollPhysics(),
       separatorBuilder: (_, index) => SizedBox(height: 10, width: 10,),
       itemBuilder: (_, index) {
-        var type = types[index];
+        var type = types[index].type.name;
         return PokemonListTypeItem(type, backgroundColor, vertical);
       },
       itemCount: types.length,

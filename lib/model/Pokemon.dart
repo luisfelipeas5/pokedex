@@ -1,21 +1,27 @@
 
 import 'package:flutter/material.dart';
+import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex/model/Ability.dart';
 
+import 'Type.dart';
+
+part 'Pokemon.g.dart';
+
+@JsonSerializable(fieldRename: FieldRename.snake)
 class Pokemon {
 
-  Pokemon(this.number, this.name, {this.image, this.types});
+  Pokemon(this.id, this.name, {this.image, this.types});
 
-  final int number;
+  final int id;
   final String name;
-  List<String>? types;
-  String? image;
+  List<TypeSlot>? types;
   int? height;
+  String? image;
   int? weight;
   List<AbilitySlot>? abilities;
 
   MaterialColor? getColor() {
-    switch(types?.first) {
+    switch(types?.first.type.name) {
       case 'grass':
       case 'bug':
         return Colors.green;
@@ -50,6 +56,14 @@ class Pokemon {
     }
   }
 
+  factory Pokemon.fromJson(Map<String, dynamic> json) {
+    var pokemon = _$PokemonFromJson(json);
+    pokemon.image = json["sprites"]["other"]["dream_world"]["front_default"];
+    return pokemon;
+  }
+
+  Map<String, dynamic> toJson() => _$PokemonToJson(this);
+
   factory Pokemon.fromListJson(Map<String, dynamic> json) {
     final pokemonUrl = Uri.parse(json['url']);
     var pathSegments = pokemonUrl.pathSegments;
@@ -58,27 +72,10 @@ class Pokemon {
     return Pokemon(number, name);
   }
 
-  factory Pokemon.fromJson(Map<String, dynamic> json) {
-    final number = json["id"];
-    final name = json['name'];
-
-    var pokemon = Pokemon(number, name);
-    pokemon.image = json["sprites"]["other"]["dream_world"]["front_default"];
-    final Iterable typesJson = json['types'];
-    pokemon.types = List<String>.from(typesJson.map((e) => e["type"]["name"]));
-    pokemon.height = json["height"];
-    pokemon.weight = json["weight"];
-
-    Iterable abilities = json["abilities"];
-    pokemon.abilities = abilities.map((e) => AbilitySlot.fromJson(e)).toList();
-
-    return pokemon;
-  }
-
   String? get abilitiesToString => abilities?.map((e) => e.ability?.name).join(", ");
 
   String getNumberFormatted() {
-    return '#' + number.toString().padLeft(3, '0');
+    return '#' + id.toString().padLeft(3, '0');
   }
 
 }

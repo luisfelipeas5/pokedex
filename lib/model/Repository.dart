@@ -23,7 +23,7 @@ class Repository {
     var futures = List<Future<Pokemon>>.from(
         jsonArrayString.map((jsonElement) async {
           var pokemonFromList = Pokemon.fromListJson(jsonElement);
-          return await getPokemon(pokemonFromList.number);
+          return await getPokemon(pokemonFromList.id);
         })
     );
     return Future.wait(futures);

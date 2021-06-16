@@ -44,7 +44,7 @@ class _AboutViewState extends State<AboutView> {
                     style: Theme.of(context).textTheme.headline6,
                   ),
                 ),
-                if (state is SpeciesLoadingState) CircularProgressIndicator(),
+                if (state is SpeciesLoadingState) SizedBox(child: CircularProgressIndicator(), height: 24, width: 24,),
                 if (species != null) _buildGenderItem(species),
                 if (species != null) _buildItem("Egg Groups", species.eggGroupsToString),
                 if (species != null) _buildItem("Egg Cycle", "Grass"),

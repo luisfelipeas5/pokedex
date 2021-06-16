@@ -61,19 +61,28 @@ class _PokemonsPageState extends State<PokemonsPage> {
         ),
         body: BlocProvider(
           create: (_) => _bloc,
-          child: BlocBuilder<PokemonsBloc, PokemonsState>(
-            builder: (context, state) {
-              return Stack(children: [
-                if (state is PokemonsLoadedFailedState)
-                  _buildFailed(),
-                if (state is PokemonsLoadingState && state.pokemonsLength == 0)
-                  _buildLoader(),
-                if (state is PokemonsLoadedState)
-                  buildList(state.pokemons),
-                if (state is PokemonsLoadingState && state.pokemonsLength > 0)
-                  _buildEndPageLoader(),
-              ]);
+          child: BlocListener<PokemonsBloc, PokemonsState>(
+            listener: (_, state) {
+              if (state is PokemonsLoadedFailedState && state.pokemonsLength > 0) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: _buildFailedText())
+                );
+              }
             },
+            child: BlocBuilder<PokemonsBloc, PokemonsState>(
+              builder: (context, state) {
+                return Stack(children: [
+                  if (state is PokemonsLoadedFailedState && state.pokemonsLength == 0)
+                    _buildFailed(),
+                  if (state is PokemonsLoadingState && state.pokemonsLength == 0)
+                    _buildLoader(),
+                  if (state is PokemonsLoadedState)
+                    buildList(state.pokemons),
+                  if (state is PokemonsLoadingState && state.pokemonsLength > 0)
+                    _buildEndPageLoader(),
+                ]);
+              },
+            ),
           ),
         ));
   }
@@ -84,14 +93,18 @@ class _PokemonsPageState extends State<PokemonsPage> {
         Expanded(
             child: Padding(
           padding: const EdgeInsets.all(24),
-          child: Text(
-            "Houve um erro no carregamento da lista de pokemons",
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
+          child: _buildFailedText(),
         )),
       ],
     );
+  }
+
+  Text _buildFailedText() {
+    return Text(
+          "Houve um erro no carregamento da lista de pokemons",
+          style: TextStyle(fontSize: 20),
+          textAlign: TextAlign.center,
+        );
   }
 
   Row _buildLoader() {

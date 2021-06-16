@@ -13,7 +13,7 @@ class DetailRoutePath extends RoutePath {
   final int? number;
 
   factory DetailRoutePath.fromPokemon(Pokemon pokemon) {
-    return DetailRoutePath._internal(pokemon: pokemon, number: pokemon.number);
+    return DetailRoutePath._internal(pokemon: pokemon, number: pokemon.id);
   }
 
   factory DetailRoutePath.fromNumber(int number) {
@@ -28,7 +28,7 @@ class DetailRoutePath extends RoutePath {
   Object? get state => pokemon;
   @override
   String get key {
-    var number = (this.number??pokemon?.number).toString();
+    var number = (this.number??pokemon?.id).toString();
     return KEY + " " + number;
   }
   @override

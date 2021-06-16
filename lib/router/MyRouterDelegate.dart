@@ -10,7 +10,6 @@ import 'RouterState.dart';
 class MyRouterDelegate extends RouterDelegate<RoutePath>
     with ChangeNotifier, PopNavigatorRouterDelegateMixin<RoutePath> {
 
-  final List<MaterialPage> _pages = [];
   RouterState routerState;
   final GlobalKey<NavigatorState> navigatorKey;
 
@@ -34,39 +33,14 @@ class MyRouterDelegate extends RouterDelegate<RoutePath>
     return Navigator(
       key: navigatorKey,
       pages: _buildPages(),
+      onPopPage: (router, result) {
+        return routerState.pop();
+      },
     );
   }
 
   List<Page> _buildPages() {
-    switch (routerState.action) {
-      case RouterAction.POP:
-        _onPopAction();
-        break;
-      case RouterAction.PUSH:
-      case RouterAction.DEEP_LINK:
-        _onDeepLinkAction();
-        break;
-    }
-    return List.of(_pages);
-  }
-
-  _onPopAction() {
-    _pages.removeLast();
-  }
-
-  _onPushAction() {
-    final routePath = currentConfiguration ?? ListRoutePath();
-    MaterialPage page = _getMaterialPage(routePath);
-    _pages.add(page);
-  }
-
-  _onDeepLinkAction() {
-    final pages = routerState.routePaths.map(
-            (routePath) => _getMaterialPage(routePath)
-    );
-
-    _pages.clear();
-    _pages.addAll(pages);
+    return routerState.routePaths.map((e) => _getMaterialPage(e)).toList();
   }
 
   MaterialPage _getMaterialPage(RoutePath routePath) {

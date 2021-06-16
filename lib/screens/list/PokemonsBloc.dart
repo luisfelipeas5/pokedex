@@ -16,9 +16,14 @@ class PokemonsBloc extends Bloc<PokemonsEvent, PokemonsState> {
   Stream<PokemonsState> mapEventToState(PokemonsEvent event) async* {
     if (event is PokemonsLoadEvent) {
       yield PokemonsLoadingState(_pokemons);
-      final newPokemons = await repository.getPokemons(_pokemons.length);
-      _pokemons.addAll(newPokemons);
-      yield PokemonsLoadedState(_pokemons);
+      try {
+        final newPokemons = await repository.getPokemons(_pokemons.length);
+        _pokemons.addAll(newPokemons);
+        yield PokemonsLoadedState(_pokemons);
+      } on Exception catch (_) {
+        yield PokemonsLoadedFailedState(_pokemons);
+        rethrow;
+      }
     }
   }
 

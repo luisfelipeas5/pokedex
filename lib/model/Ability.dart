@@ -1,24 +1,44 @@
+
+import 'package:json_annotation/json_annotation.dart';
+
+part 'Ability.g.dart';
+
+@JsonSerializable(fieldRename: FieldRename.snake)
 class AbilitySlot {
-  Ability? ability;
+  final Ability? ability;
 
-  AbilitySlot._internal();
+  // AbilitySlot._internal();
 
-  factory AbilitySlot.fromJson(Map<String, dynamic> json) {
-    var abilitySlot = AbilitySlot._internal();
-    abilitySlot.ability = Ability.fromJson(json["ability"]);
-    return abilitySlot;
-  }
+  AbilitySlot(this.ability);
+
+  factory AbilitySlot.fromJson(Map<String, dynamic> json) => _$AbilitySlotFromJson(json);
+
+  Map<String, dynamic> toJson() => _$AbilitySlotToJson(this);
+
+  // factory AbilitySlot.fromJson(Map<String, dynamic> json) {
+  //   var abilitySlot = AbilitySlot._internal();
+  //   abilitySlot.ability = Ability.fromJson(json["ability"]);
+  //   return abilitySlot;
+  // }
 
 }
 
+
+@JsonSerializable(fieldRename: FieldRename.snake)
 class Ability {
-  String? name;
+  final String? name;
 
-  Ability._internal();
+  factory Ability.fromJson(Map<String, dynamic> json) => _$AbilityFromJson(json);
 
-  factory Ability.fromJson(Map<String, dynamic> json) {
-    var ability = Ability._internal();
-    ability.name = json["name"];
-    return ability;
-  }
+  Ability(this.name);
+
+  Map<String, dynamic> toJson() => _$AbilityToJson(this);
+
+  // Ability._internal();
+  //
+  // factory Ability.fromJson(Map<String, dynamic> json) {
+  //   var ability = Ability._internal();
+  //   ability.name = json["name"];
+  //   return ability;
+  // }
 }

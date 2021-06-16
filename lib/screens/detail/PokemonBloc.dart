@@ -23,8 +23,8 @@ class PokemonBloc extends Bloc<PokemonEvent, PokemonState> {
       var number = event.number ?? 1;
       if (pokemon == null) {
         pokemon = await repository.getPokemon(number);
-        this.pokemon = pokemon;
       }
+      this.pokemon = pokemon;
       yield PokemonLoadedState(pokemon);
 
       yield SpeciesLoadingState();
