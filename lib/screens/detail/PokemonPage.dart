@@ -2,17 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:pokedex/model/Pokemon.dart';
 import 'package:pokedex/model/Repository.dart';
 import 'package:pokedex/router/components/MyBackButton.dart';
+import 'package:pokedex/screens/detail/PokemonBody.dart';
 import 'package:pokedex/screens/detail/PokemonEvent.dart';
 import 'package:pokedex/screens/detail/PokemonState.dart';
 import 'package:pokedex/screens/detail/components/BasicData.dart';
 import 'package:provider/provider.dart';
 
 import 'PokemonBloc.dart';
-import 'components/PokemonDetail.dart';
 
 class PokemonPage extends StatefulWidget {
   factory PokemonPage.fromNumber(int? number) {
@@ -54,7 +53,6 @@ class _PokemonPageState extends State<PokemonPage> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return BlocProvider(
       create: (_) => _pokemonBloc,
       child: BlocBuilder<PokemonBloc, PokemonState>(builder: (context, state) {
@@ -79,22 +77,7 @@ class _PokemonPageState extends State<PokemonPage> {
             child: Column(
               children: [
                 BasicData(pokemon),
-                Expanded(
-                  child: Stack(
-                    alignment: Alignment.topCenter,
-                    children: [
-                      buildPokeballImage(size),
-                      Align(
-                        alignment: Alignment.bottomLeft,
-                        child: PokemonDetail(pokemon),
-                      ),
-                      SvgPicture.network(
-                        pokemon.image ?? "",
-                        height: size.height * 0.34,
-                      ),
-                    ],
-                  ),
-                )
+                PokemonBody(pokemon),
               ],
             ),
           ),
@@ -103,18 +86,4 @@ class _PokemonPageState extends State<PokemonPage> {
     );
   }
 
-  Align buildPokeballImage(Size size) {
-    return Align(
-      alignment: Alignment.lerp(Alignment.topLeft, Alignment.topRight, 1.1)!,
-      child: Container(
-        margin: EdgeInsets.only(top: size.height * 0.04),
-        child: Image.asset(
-          "assets/pokeball_logo.jpg",
-          color: widget.pokemon?.getColor()?.shade300 ?? Colors.transparent,
-          colorBlendMode: BlendMode.srcIn,
-          height: size.height * 0.28,
-        ),
-      ),
-    );
-  }
 }

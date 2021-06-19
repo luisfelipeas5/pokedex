@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pokedex/model/species/Species.dart';
@@ -27,13 +28,12 @@ class _AboutViewState extends State<AboutView> {
         }
         return Expanded(
           child: Padding(
-            padding: const EdgeInsets.only(
-                left: 16, right: 16, top: 8
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: ListView(
               physics: BouncingScrollPhysics(),
               shrinkWrap: false,
               children: [
+                SizedBox(height: 8,),
                 _buildItem("Height", pokemon.height.toString() + " cm"),
                 _buildItem("Weight", (pokemon.weight??0 * 100).toString() + " g"),
                 _buildItem("Abilities", pokemon.abilitiesToString.toString()),
@@ -44,7 +44,18 @@ class _AboutViewState extends State<AboutView> {
                     style: Theme.of(context).textTheme.headline6,
                   ),
                 ),
-                if (state is SpeciesLoadingState) SizedBox(child: CircularProgressIndicator(), height: 24, width: 24,),
+                SizedBox(height: 8,),
+                if (state is SpeciesLoadingState)
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                          height: 32,
+                          width: 32,
+                          child: CircularProgressIndicator(strokeWidth: 2.5,)
+                      ),
+                    ],
+                  ),
                 if (species != null) _buildGenderItem(species),
                 if (species != null) _buildItem("Egg Groups", species.eggGroupsToString),
                 if (species != null) _buildItem("Egg Cycle", "Grass"),

@@ -4,16 +4,16 @@ import 'package:pokedex/model/Pokemon.dart';
 
 import 'AboutView.dart';
 
-class PokemonDetail extends StatefulWidget {
+class PokemonDetailTabs extends StatefulWidget {
   final Pokemon pokemon;
 
-  const PokemonDetail(this.pokemon, {Key? key}) : super(key: key);
+  const PokemonDetailTabs(this.pokemon, {Key? key}) : super(key: key);
 
   @override
-  _PokemonDetailState createState() => _PokemonDetailState();
+  _PokemonDetailTabsState createState() => _PokemonDetailTabsState();
 }
 
-class _PokemonDetailState extends State<PokemonDetail> {
+class _PokemonDetailTabsState extends State<PokemonDetailTabs> {
   final _tabs = ["About", "Base Stats", "Evolution", "Moves"];
   final _tabSelectionPositions = [0.0, 0.33, 0.67, 1.0];
   var _tabSelected = 0;
@@ -25,7 +25,9 @@ class _PokemonDetailState extends State<PokemonDetail> {
     final tabWidth = (size.width/_tabs.length) - paddingHorizontal/2;
     return Container(
       margin: EdgeInsets.only(top: size.height * 0.3),
-      padding: EdgeInsets.symmetric(vertical: 30, horizontal: paddingHorizontal),
+      padding: EdgeInsets.only(
+          top: 30, left: paddingHorizontal, right: paddingHorizontal
+      ),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
