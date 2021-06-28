@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pokedex/model/Pokemon.dart';
-import 'package:pokedex/model/Repository.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
+import 'package:pokedex/repositories/Repository.dart';
 import 'package:pokedex/screens/list/PokemonsBloc.dart';
 import 'package:pokedex/screens/list/PokemonsEvent.dart';
 import 'package:pokedex/screens/list/PokemonsState.dart';

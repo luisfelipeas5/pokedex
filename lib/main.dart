@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/screens/list/PokemonsBloc.dart';
-import 'package:pokedex/model/Repository.dart';
+import 'package:pokedex/repositories/Repository.dart';
 import 'package:pokedex/router/MyRouterDelegate.dart';
 import 'package:pokedex/router/RouterState.dart';
 import 'package:provider/provider.dart';

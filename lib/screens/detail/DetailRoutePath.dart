@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:pokedex/model/Pokemon.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
 import 'package:pokedex/router/routes/RoutePath.dart';
 import 'package:pokedex/extensions/ListExtensions.dart';
 

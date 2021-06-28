@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:pokedex/model/Pokemon.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
 
 @immutable
 abstract class PokemonState {}

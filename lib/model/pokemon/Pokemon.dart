@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:pokedex/model/Ability.dart';
+import 'package:pokedex/model/ability/Ability.dart';
 
-import 'Type.dart';
+import '../type/Type.dart';
 
 part 'Pokemon.g.dart';
 

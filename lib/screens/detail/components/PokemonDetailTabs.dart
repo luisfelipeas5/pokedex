@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pokedex/model/Pokemon.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
 
 import 'AboutView.dart';
 
@@ -76,6 +76,7 @@ class _PokemonDetailTabsState extends State<PokemonDetailTabs> {
           crossAxisCount: _tabs.length,
           childAspectRatio: 2.3
         ),
+        physics: NeverScrollableScrollPhysics(),
         itemBuilder: (_, index) {
           return Ink(
             child: InkWell(

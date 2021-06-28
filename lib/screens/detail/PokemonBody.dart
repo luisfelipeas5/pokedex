@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:pokedex/model/Pokemon.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
 
 import 'components/PokemonDetailTabs.dart';
 
@@ -19,7 +18,7 @@ class PokemonBody extends StatelessWidget {
       child: ListView(
         children: [
           SizedBox(
-            height: size.height + imageHeight,
+            height: size.height,
             child: Stack(
               alignment: Alignment.topCenter,
               children: [

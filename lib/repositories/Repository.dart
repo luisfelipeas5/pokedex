@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart';
-import 'package:pokedex/model/Pokemon.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
 import 'package:http/http.dart' as http;
 import 'package:pokedex/model/species/Species.dart';
 
