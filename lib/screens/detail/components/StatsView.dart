@@ -28,40 +28,59 @@ class _StatsViewState extends State<StatsView> {
             );
           }
           final stats = state.pokemon.stats??[];
+          final colors = [Colors.red, Colors.green];
           return Expanded(
-            child: ListView.builder(
-              physics: BouncingScrollPhysics(),
-              itemCount: stats.length,
-              itemBuilder: (_, index) {
-                final stat = stats[index];
-                return Expanded(
-                  child: Row(
-                    children: [
-                      SizedBox(
-                        width: 75,
-                        child: Text(
-                            stat.stat.name.replaceFirst("special", "sp.")
-                                .replaceFirst("-attack", " atk")
-                                .replaceFirst("-defense", " def")
-                                .capitalizeFirst()
-                        )
+            child: Padding(
+              padding: const EdgeInsets.only(
+                  top: 16, left: 12
+              ),
+              child: ListView.builder(
+                physics: BouncingScrollPhysics(),
+                itemCount: stats.length,
+                itemBuilder: (_, index) {
+                  final stat = stats[index];
+                  return Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 5, horizontal: 20
                       ),
-                      SizedBox(
-                        width: 25,
-                        child: Text(
-                          stat.baseStat.toString(),
-                          textAlign: TextAlign.right,
-                        )
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 75,
+                            child: Text(
+                              stat.stat.name.replaceFirst("special", "sp.")
+                                  .replaceFirst("hp", "HP")
+                                  .replaceFirst("-attack", " atk")
+                                  .replaceFirst("-defense", " def")
+                                  .capitalizeFirst(),
+                              style: Theme.of(context).textTheme.bodyText2?.copyWith(
+                                  color: Theme.of(context).hintColor.withAlpha(100)
+                              ),
+                            )
+                          ),
+                          SizedBox(
+                            width: 25,
+                            child: Text(
+                              stat.baseStat.toString(),
+                              textAlign: TextAlign.right,
+                              style: Theme.of(context).textTheme.bodyText2,
+                            )
+                          ),
+                          Expanded(
+                            child: LinearPercentIndicator(
+                              percent: stat.baseStat/200.0,
+                              progressColor: colors[index%2],
+                              lineHeight: 3,
+                              backgroundColor: Colors.grey[200],
+                            ),
+                          ),
+                        ],
                       ),
-                      Expanded(
-                        child: LinearPercentIndicator(
-                          percent: stat.baseStat/200.0,
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              },
+                    ),
+                  );
+                },
+              ),
             ),
           );
         },
