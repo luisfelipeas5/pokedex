@@ -19,17 +19,19 @@ class PokemonBloc extends Bloc<PokemonEvent, PokemonState> {
   @override
   Stream<PokemonState> mapEventToState(PokemonEvent event) async* {
     if (event is PokemonLoadEvent) {
-      var pokemon = event.pokemon;
-      var number = event.number ?? 1;
-      if (pokemon == null) {
-        pokemon = await repository.getPokemon(number);
+      this.pokemon = event.pokemon;
+      if (pokemon != null) {
+        yield PokemonLoadedState(pokemon!);
       }
+
+      final number = event.number ?? event.pokemon?.id ?? 1;
+      pokemon = await repository.getPokemon(number);
       this.pokemon = pokemon;
-      yield PokemonLoadedState(pokemon);
+      yield PokemonLoadedState(pokemon!);
 
       yield SpeciesLoadingState();
       this.species = await repository.getSpecies(number);
-      yield SpeciesLoaded();
+      yield SpeciesLoaded(pokemon!);
     }
   }
 }

@@ -9,7 +9,11 @@ class PokemonLoadingState extends PokemonState {}
 
 class SpeciesLoadingState extends PokemonState {}
 
-class SpeciesLoaded extends PokemonState {}
+class SpeciesLoaded extends PokemonLoadedState {
+  final Pokemon pokemon;
+
+  SpeciesLoaded(this.pokemon) : super(pokemon);
+}
 
 class PokemonLoadedState extends PokemonState {
 

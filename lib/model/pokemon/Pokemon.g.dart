@@ -19,6 +19,9 @@ Pokemon _$PokemonFromJson(Map<String, dynamic> json) {
     ..weight = json['weight'] as int?
     ..abilities = (json['abilities'] as List<dynamic>?)
         ?.map((e) => AbilitySlot.fromJson(e as Map<String, dynamic>))
+        .toList()
+    ..stats = (json['stats'] as List<dynamic>?)
+        ?.map((e) => StatSlot.fromJson(e as Map<String, dynamic>))
         .toList();
 }
 
@@ -26,8 +29,9 @@ Map<String, dynamic> _$PokemonToJson(Pokemon instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'types': instance.types,
-      'image': instance.image,
       'height': instance.height,
+      'image': instance.image,
       'weight': instance.weight,
       'abilities': instance.abilities,
+      'stats': instance.stats,
     };

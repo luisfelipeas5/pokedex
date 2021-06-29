@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:pokedex/model/ability/Ability.dart';
+import 'package:pokedex/model/stats/StatSlot.dart';
 
 import '../type/Type.dart';
 
@@ -19,6 +20,7 @@ class Pokemon {
   String? image;
   int? weight;
   List<AbilitySlot>? abilities;
+  List<StatSlot>? stats;
 
   MaterialColor? getColor() {
     switch(types?.first.type.name) {
