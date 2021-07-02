@@ -9,14 +9,15 @@ class MyRouteInformationParser extends RouteInformationParser<RoutePath> {
   @override
   Future<RoutePath> parseRouteInformation(RouteInformation routeInformation) async {
     final uri = Uri.parse(routeInformation.location??"");
-    var page = "/" + uri.pathSegments.first;
+    if (uri.pathSegments.isNotEmpty) {
+      var page = "/" + uri.pathSegments.first;
+      switch (page) {
+        case ListRoutePath.PATH:
+          return ListRoutePath();
 
-    switch (page) {
-      case ListRoutePath.PATH:
-        return ListRoutePath();
-
-      case DetailRoutePath.PATH:
-        return DetailRoutePath.fromRouteInformation(routeInformation);
+        case DetailRoutePath.PATH:
+          return DetailRoutePath.fromRouteInformation(routeInformation);
+      }
     }
 
     return ListRoutePath();

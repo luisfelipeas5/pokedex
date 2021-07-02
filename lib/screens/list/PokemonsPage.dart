@@ -92,8 +92,8 @@ class _PokemonsPageState extends State<PokemonsPage> {
       children: [
         Expanded(
             child: Padding(
-          padding: const EdgeInsets.all(24),
-          child: _buildFailedText(),
+              padding: const EdgeInsets.all(24),
+              child: _buildFailedText(),
         )),
       ],
     );
@@ -122,28 +122,22 @@ class _PokemonsPageState extends State<PokemonsPage> {
   Align _buildEndPageLoader() {
     return Align(
         alignment: Alignment.bottomCenter,
-        child: Expanded(
-          child: LinearProgressIndicator(),
-        ));
+        child: LinearProgressIndicator());
   }
 
   Widget buildList(List<Pokemon> pokemons) {
-    return SafeArea(
-      child: Expanded(
-        child: GridView.builder(
-          controller: _scrollController,
-          padding: EdgeInsets.only(top: 12, right: 16, left: 16, bottom: 16),
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              childAspectRatio: 1.3,
-              crossAxisCount: 2,
-              mainAxisSpacing: 10,
-              crossAxisSpacing: 10),
-          itemBuilder: (_, index) {
-            return PokemonListItem(pokemons[index]);
-          },
-          itemCount: pokemons.length,
-        ),
-      ),
+    return GridView.builder(
+      controller: _scrollController,
+      padding: EdgeInsets.only(top: 12, right: 16, left: 16, bottom: 16),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          childAspectRatio: 1.3,
+          crossAxisCount: 2,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10),
+      itemBuilder: (_, index) {
+        return PokemonListItem(pokemons[index]);
+      },
+      itemCount: pokemons.length,
     );
   }
 
