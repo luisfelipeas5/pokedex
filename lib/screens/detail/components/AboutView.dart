@@ -2,14 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:pokedex/model/species/Species.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
 import 'package:pokedex/screens/detail/PokemonBloc.dart';
 import 'package:pokedex/screens/detail/PokemonState.dart';
+import 'package:pokedex/screens/detail/components/species/BreedingView.dart';
+import 'package:pokedex/screens/detail/components/subcomponents/LabelValue.dart';
 
 class AboutView extends StatefulWidget {
 
-  const AboutView({Key? key}) : super(key: key);
+  final Pokemon pokemon;
+
+  const AboutView(this.pokemon, {Key? key}) : super(key: key);
 
   @override
   _AboutViewState createState() => _AboutViewState();
@@ -18,120 +21,51 @@ class AboutView extends StatefulWidget {
 class _AboutViewState extends State<AboutView> {
   @override
   Widget build(BuildContext context) {
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: ListView(
+          physics: BouncingScrollPhysics(),
+          children: [
+            SizedBox(height: 8,),
+            _buildProgress(),
+            _buildBasicAbout(),
+            SizedBox(height: 12,),
+            BreedingView(widget.pokemon.id),
+            SizedBox(height: 80,),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBasicAbout() {
     return BlocBuilder<PokemonBloc, PokemonState>(
       builder: (context, state) {
-        var bloc = context.read<PokemonBloc>();
-        final pokemon = bloc.pokemon;
-        final species = bloc.species;
-        if (pokemon == null) {
-          return CircularProgressIndicator();
+        if (!(state is PokemonLoadedState)) {
+          return Container();
         }
-        return Expanded(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: ListView(
-              physics: BouncingScrollPhysics(),
-              shrinkWrap: false,
-              children: [
-                SizedBox(height: 8,),
-                _buildItem("Height", pokemon.height.toString() + " cm"),
-                _buildItem("Weight", (pokemon.weight??0 * 100).toString() + " g"),
-                _buildItem("Abilities", pokemon.abilitiesToString.toString()),
-                Padding(
-                  padding: const EdgeInsets.only(top: 12),
-                  child: Text(
-                    "Breeding",
-                    style: Theme.of(context).textTheme.headline6,
-                  ),
-                ),
-                SizedBox(height: 8,),
-                if (state is SpeciesLoadingState)
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                          height: 32,
-                          width: 32,
-                          child: CircularProgressIndicator(strokeWidth: 2.5,)
-                      ),
-                    ],
-                  ),
-                if (species != null) _buildGenderItem(species),
-                if (species != null) _buildItem("Egg Groups", species.eggGroupsToString),
-                if (species != null) _buildItem("Egg Cycle", "Grass"),
-                SizedBox(height: 80,),
-              ],
-            ),
-          ),
+        final pokemon = state.pokemon;
+        return Column(
+          children: [
+            LabelValue("Height", pokemon.height.toString() + " cm"),
+            LabelValue("Weight", ((pokemon.weight??0) * 100).toString() + " g"),
+            LabelValue("Abilities", pokemon.abilitiesToString.toString()),
+          ],
         );
       },
     );
   }
 
-  Widget _buildItem(String label, String? value) {
-    return Padding(
-      padding: _itemPadding(),
-      child: Row(
-        children: [
-          _buildLabel(label, context),
-          Expanded(
-              flex: 3,
-              child: Text(
-                value??"",
-                style: Theme.of(context).textTheme.bodyText2,
-              ))
-        ],
-      ),
+  Widget _buildProgress() {
+    return BlocBuilder<PokemonBloc, PokemonState>(
+      builder: (context, state) {
+        if (state is PokemonLoadingState) {
+          return CircularProgressIndicator();
+        }
+        return Container();
+      },
     );
   }
 
-  EdgeInsets _itemPadding() {
-    return const EdgeInsets.symmetric(
-      vertical: 8
-    );
-  }
-
-  _buildGenderItem(Species species) {
-    return Padding(
-      padding: _itemPadding(),
-      child: Row(
-        children: [
-          _buildLabel("Gender", context),
-          Expanded(
-              flex: 3,
-              child: Row(
-                children: [
-                  SvgPicture.asset(
-                    "assets/male.svg",
-                    width: 12,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(width: 4,),
-                  Text("${species.maleRate}%"),
-                  SizedBox(width: 16,),
-                  SvgPicture.asset(
-                    "assets/female.svg",
-                    width: 12,
-                    color: Colors.pink,
-                  ),
-                  SizedBox(width: 4,),
-                  Text("${species.femaleRate}%"),
-                ],
-              ))
-        ],
-      ),
-    );
-  }
-
-  Expanded _buildLabel(String label, BuildContext context) {
-    return Expanded(
-          flex: 2,
-          child: Text(
-            label,
-            style: Theme.of(context).textTheme.bodyText2?.copyWith(
-                color: Theme.of(context).hintColor.withAlpha(100)
-            ),
-          ),
-        );
-  }
 }

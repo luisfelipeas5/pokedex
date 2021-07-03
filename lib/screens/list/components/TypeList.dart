@@ -1,29 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/model/pokemon/Pokemon.dart';
 import 'package:pokedex/extensions/StringExtensions.dart';
+import 'package:pokedex/model/pokemon/Pokemon.dart';
+import 'package:pokedex/model/type/Type.dart';
 
-class PokemonListType extends StatelessWidget {
+class TypeList extends StatelessWidget {
 
-  PokemonListType(this.pokemon, {this.vertical = true, Key? key}) : super(key: key);
+  factory TypeList.fromPokemon(Pokemon pokemon, {bool vertical = true}) {
+    return TypeList(
+        pokemon.types?.map((e) => e.type).toList(),
+        pokemon.getColor()?.shade300,
+        vertical: vertical,
+    );
+  }
 
-  final Pokemon pokemon;
+  TypeList(
+      this.types,
+      this.backgroundColor,
+      {this.vertical = true, Key? key}
+  ) : super(key: key);
+
+  final List<PokeType>? types;
+  final Color? backgroundColor;
   final bool vertical;
 
   @override
   Widget build(BuildContext context) {
-    final types = pokemon.types??[];
-    final backgroundColor = pokemon.getColor()?.shade300;
-
     return ListView.separated(
       shrinkWrap: true,
       scrollDirection: vertical? Axis.vertical : Axis.horizontal,
       physics: NeverScrollableScrollPhysics(),
       separatorBuilder: (_, index) => SizedBox(height: 10, width: 10,),
       itemBuilder: (_, index) {
-        var type = types[index].type.name;
+        var type = types?[index].name;
         return PokemonListTypeItem(type, backgroundColor, vertical);
       },
-      itemCount: types.length,
+      itemCount: types?.length??0,
     );
   }
 }
@@ -32,7 +43,7 @@ class PokemonListTypeItem extends StatelessWidget {
   const PokemonListTypeItem(this.type, this.backgroundColor, this.vertical, {Key? key}) : super(key: key);
 
   final Color? backgroundColor;
-  final String type;
+  final String? type;
   final bool vertical;
 
   @override
@@ -44,7 +55,7 @@ class PokemonListTypeItem extends StatelessWidget {
               ),
               padding: EdgeInsets.symmetric(vertical: 4, horizontal: 15),
               child: Text(
-                type.capitalizeFirst(),
+                type?.capitalizeFirst()??"",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 12

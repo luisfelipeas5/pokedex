@@ -37,8 +37,8 @@ class _PokemonDetailTabsState extends State<PokemonDetailTabs> {
         children: [
           _buildTabs(),
           _buildTabIndicator(tabWidth),
-          if (_tabSelected == 0) AboutView(),
-          if (_tabSelected == 1) StatsView(),
+          if (_tabSelected == 0) AboutView(widget.pokemon),
+          if (_tabSelected == 1) StatsView(widget.pokemon),
         ],
       ),
     );

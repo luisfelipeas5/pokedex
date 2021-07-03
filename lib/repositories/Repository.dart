@@ -4,6 +4,7 @@ import 'package:http/http.dart';
 import 'package:pokedex/model/pokemon/Pokemon.dart';
 import 'package:http/http.dart' as http;
 import 'package:pokedex/model/species/Species.dart';
+import 'package:pokedex/model/type/DamageRelations.dart';
 
 class Repository {
 
@@ -48,5 +49,28 @@ class Repository {
   Future<Species> getSpecies(int number) async {
     final response = await _get("pokemon-species/$number");
     return Species.fromJson(jsonDecode(response.body));
+  }
+
+  Future<DamageRelations> getDamageRelations(int number) async {
+    final pokemon = await getPokemon(number);
+
+    final allDamageRelations = DamageRelations(
+      List.empty(growable: true), List.empty(growable: true), List.empty(growable: true),
+        List.empty(growable: true), List.empty(growable: true), List.empty(growable: true)
+    );
+    pokemon.types?.forEach((typeSlot) async {
+      final response = await _get("type/${typeSlot.type.name}");
+      final typeDamageRelation = DamageRelations.fromJson(
+          jsonDecode(response.body)["damage_relations"]);
+      allDamageRelations
+        ..noDamageTo.addAll(typeDamageRelation.noDamageTo)
+        ..halfDamageTo.addAll(typeDamageRelation.halfDamageTo)
+        ..doubleDamageTo.addAll(typeDamageRelation.doubleDamageTo)
+        ..noDamageFrom.addAll(typeDamageRelation.noDamageFrom)
+        ..halfDamageFrom.addAll(typeDamageRelation.halfDamageFrom)
+        ..doubleDamageFrom.addAll(typeDamageRelation.doubleDamageFrom);
+    });
+
+    return allDamageRelations;
   }
 }

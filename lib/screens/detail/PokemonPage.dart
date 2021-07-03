@@ -36,12 +36,12 @@ class PokemonPage extends StatefulWidget {
 }
 
 class _PokemonPageState extends State<PokemonPage> {
-  final _pokemonBloc = PokemonBloc();
+  late PokemonBloc _pokemonBloc;
 
   @override
   void initState() {
     super.initState();
-    _pokemonBloc.repository = Provider.of<Repository>(context, listen: false);
+    _pokemonBloc = PokemonBloc(context.read());
     _pokemonBloc.add(PokemonLoadEvent(widget.number, widget.pokemon));
   }
 
@@ -55,35 +55,36 @@ class _PokemonPageState extends State<PokemonPage> {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => _pokemonBloc,
-      child: BlocBuilder<PokemonBloc, PokemonState>(builder: (context, state) {
-        if (state is PokemonLoadingState) {
-          return Container(
-            alignment: Alignment.center,
-            child: SizedBox(
-                height: 48, width: 48, child: CircularProgressIndicator()),
-          );
-        }
-        final pokemon = _pokemonBloc.pokemon;
-        if (pokemon == null) return Container();
-
-        return Scaffold(
-          appBar: AppBar(
-            leading: MyBackButton(),
-            backgroundColor: pokemon.getColor(),
-            elevation: 0,
-          ),
-          body: Container(
-            color: pokemon.getColor(),
-            child: Column(
-              children: [
-                BasicData(pokemon),
-                PokemonBody(pokemon),
-              ],
-            ),
-          ),
-        );
-      }),
+      child: BlocBuilder<PokemonBloc, PokemonState>(
+          buildWhen: (previous, current) =>
+            (previous is PokemonLoadingState && current is PokemonLoadedState)
+                || current is PokemonLoadingState,
+          builder: (context, state) {
+            if (state is PokemonLoadingState) {
+              return Container(
+                alignment: Alignment.center,
+                child: SizedBox(
+                    height: 48, width: 48, child: CircularProgressIndicator()),
+              );
+            }
+            final pokemon = (state as PokemonLoadedState).pokemon;
+            return Scaffold(
+              appBar: AppBar(
+                leading: MyBackButton(),
+                backgroundColor: pokemon.getColor(),
+                elevation: 0,
+              ),
+              body: Container(
+                color: pokemon.getColor(),
+                child: Column(
+                  children: [
+                    BasicData(pokemon),
+                    PokemonBody(pokemon),
+                  ],
+                ),
+              ),
+            );
+          }),
     );
   }
-
 }

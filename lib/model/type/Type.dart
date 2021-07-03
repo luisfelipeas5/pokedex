@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'Type.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(fieldRename: FieldRename.snake)
 class TypeSlot {
   final PokeType type;
 
@@ -13,7 +13,7 @@ class TypeSlot {
   Map<String, dynamic> toJson() => _$TypeSlotToJson(this);
 }
 
-@JsonSerializable()
+@JsonSerializable(fieldRename: FieldRename.snake)
 class PokeType {
   final String name;
 

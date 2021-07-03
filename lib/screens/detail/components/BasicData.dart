@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pokedex/model/pokemon/Pokemon.dart';
 import 'package:pokedex/extensions/StringExtensions.dart';
-import 'package:pokedex/screens/list/components/PokemonListType.dart';
+import 'package:pokedex/screens/list/components/TypeList.dart';
 
 class BasicData extends StatefulWidget {
 
@@ -48,7 +48,7 @@ class _BasicDataState extends State<BasicData> {
       height: 40,
       child: Align(
         alignment: Alignment.topLeft,
-        child: PokemonListType(
+        child: TypeList.fromPokemon(
           widget.pokemon,
           vertical: false,
         ),

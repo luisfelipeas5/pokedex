@@ -7,7 +7,7 @@ import 'package:pokedex/router/RouterState.dart';
 import 'package:pokedex/screens/detail/DetailRoutePath.dart';
 import 'package:provider/provider.dart';
 
-import 'PokemonListType.dart';
+import 'TypeList.dart';
 
 class PokemonListItem extends StatelessWidget {
   PokemonListItem(this.pokemon, {Key? key}) : super(key: key);
@@ -47,7 +47,7 @@ class PokemonListItem extends StatelessWidget {
                     buildNumber(pokemon),
                     buildName(),
                     SizedBox(height: 10,),
-                    PokemonListType(pokemon),
+                    TypeList.fromPokemon(pokemon),
                   ],
                 )
               ],
