@@ -24,11 +24,14 @@ class _StatsViewState extends State<StatsView> {
   Widget build(BuildContext context) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.only(top: 16, left: 12),
+        padding: const EdgeInsets.symmetric(
+            vertical: 16, horizontal: 22,
+        ),
         child: ListView(
           children: [
             _buildLoader(),
             _buildBarsList(),
+            SizedBox(height: 12,),
             Align(
               alignment: Alignment.center,
               child: TypeDefenses(widget.pokemon),
@@ -72,8 +75,7 @@ class _StatsViewState extends State<StatsView> {
             itemBuilder: (_, index) {
               final stat = stats[index];
               return Padding(
-                padding:
-                const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+                padding: const EdgeInsets.symmetric(vertical: 5),
                 child: Row(
                   children: [
                     SizedBox(

@@ -31,8 +31,7 @@ class _PokemonDetailTabsState extends State<PokemonDetailTabs> {
       ),
       decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30), topRight: Radius.circular(30))),
+          borderRadius: BorderRadius.all(Radius.circular(30))),
       child: Column(
         children: [
           _buildTabs(),
