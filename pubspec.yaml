@@ -33,9 +33,7 @@ dependencies:
   percent_indicator: ^3.0.1
   flutter_gifimage:
     git:
-      url: git@github.com:peng8350/flutter_gifimage.git
-      #null-safety migration PR
-      ref: 3dc34a1
+      url: git@github.com:Coec0/flutter_gifimage.git #null-safety migration PR
 
 dev_dependencies:
   build_runner: ^2.0.4

@@ -22,15 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Component divided in others components">
+    <list default="true" id="583b0520-724e-49df-bf44-c4f19049f77c" name="Default Changelist" comment="Added a github ssh dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/detail/PokemonBody.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/PokemonBody.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/detail/components/BasicData.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/components/BasicData.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/detail/components/PokemonDetailTabs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/components/PokemonDetailTabs.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/detail/components/StatsView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/components/StatsView.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/detail/components/type_defenses/TypeDefenses.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/detail/components/type_defenses/TypeDefenses.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/screens/list/components/TypeList.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/screens/list/components/TypeList.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625325833821</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added a github ssh dependency">
+      <created>1626354174589</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1626354174589</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,7 +297,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="- Created a ListView with .builder&#10;- Image assets added and loaded with SvgImage&#10;- Provider + Bloc added&#10;- Calling PokeAPI to list first Pokemons" />
     <MESSAGE value="Pagination added" />
     <MESSAGE value="- null safety migration&#10;- safeArea added&#10;- text size and some margin added" />
@@ -322,7 +321,8 @@
     <MESSAGE value="StatsView: base stats items layout improved" />
     <MESSAGE value="Render errors fixed" />
     <MESSAGE value="Component divided in others components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Component divided in others components" />
+    <MESSAGE value="Added a github ssh dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a github ssh dependency" />
   </component>
   <component name="WindowStateProjectService">
     <state x="211" y="182" width="800" height="719" key="#Plugins" timestamp="1625316395020">
@@ -438,13 +438,13 @@
     </state>
     <state x="2285" y="173" width="1022" height="737" key="SettingsEditor/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1622499531789" />
     <state x="474" y="200" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1622308166540" />
-    <state x="790" y="224" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1625325834795">
+    <state x="790" y="224" width="800" height="563" key="Vcs.Push.Dialog.v2" timestamp="1626354175615">
       <screen x="72" y="27" width="1608" height="1023" />
     </state>
     <state x="2391" y="260" width="800" height="563" key="Vcs.Push.Dialog.v2/0.27.3600.1053@0.27.3600.1053" timestamp="1621176195370" />
     <state x="2670" y="202" width="580" height="569" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/0.27.1920.1053@1920.0.1680.1050" timestamp="1623805723576" />
     <state x="790" y="224" width="580" height="555" key="Vcs.Push.Dialog.v2/1920.0.1680.1050/72.27.1608.1023@72.27.1608.1023" timestamp="1624140315364" />
-    <state x="790" y="224" width="800" height="563" key="Vcs.Push.Dialog.v2/72.27.1608.1023/1680.0.1920.1080@72.27.1608.1023" timestamp="1625325834795" />
+    <state x="790" y="224" width="800" height="563" key="Vcs.Push.Dialog.v2/72.27.1608.1023/1680.0.1920.1080@72.27.1608.1023" timestamp="1626354175615" />
     <state x="790" y="224" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1608.1023@72.27.1608.1023" timestamp="1624279053527" />
     <state x="897" y="230" width="800" height="563" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1622484458156" />
     <state x="192" y="159" width="944" height="814" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1624919522131">
