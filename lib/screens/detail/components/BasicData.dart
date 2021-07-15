@@ -45,7 +45,7 @@ class _BasicDataState extends State<BasicData> {
 
   Widget buildListType() {
     return SizedBox(
-      height: 40,
+      height: 30,
       child: Align(
         alignment: Alignment.topLeft,
         child: TypeList.fromPokemon(

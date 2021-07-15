@@ -16,6 +16,7 @@ class PokemonBody extends StatelessWidget {
     var imageHeight = size.height * 0.34;
     return Expanded(
       child: ListView(
+        physics: BouncingScrollPhysics(),
         children: [
           SizedBox(
             height: size.height,

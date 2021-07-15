@@ -48,32 +48,26 @@ class PokemonListTypeItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var container = Container(
+    return Flex(
+      direction: vertical ? Axis.vertical : Axis.horizontal,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Container(
               decoration: BoxDecoration(
                 color: backgroundColor,
                 borderRadius: BorderRadius.all(Radius.circular(50)),
               ),
               padding: EdgeInsets.symmetric(vertical: 4, horizontal: 15),
               child: Text(
-                type?.capitalizeFirst()??"",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 12
-                ),
+                type?.capitalizeFirst() ?? "",
+                style: TextStyle(color: Colors.white, fontSize: 12),
                 textAlign: TextAlign.center,
-              )
-          );
-
-    if (vertical) {
-      return Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [container],
-      );
-    } else {
-      return Column(
-        children: [container,],
-      );
-    }
+              )),
+        ),
+      ],
+    );
   }
 
 }
